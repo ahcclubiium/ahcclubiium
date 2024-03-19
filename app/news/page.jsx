@@ -6,9 +6,9 @@ const contentful = require("contentful");
 export default async function page() {
     // DON'T TOUCH THIS PART
   const client = await contentful.createClient({
-    space: "bjecqd91nk6y",
+    space: process.env.SPACE,
     environment: "master",
-    accessToken: "_nbDlMnrgFB7K1zPatQogWhfavqFHVOnQaWV3MmLNNk",
+    accessToken: process.env.ACCESS_TOKEN,
   });
   // const client = await getClient();
 
