@@ -6,7 +6,7 @@ export default function ActivityCard({
   activityDesc,
 }) {
   return (
-    <div className="flex-col justify-center w-64">
+    <div className=" flex-col justify-center w-64">
       <div className="text-6xl flex justify-center py-5 text-sky-500">
         {activityImage}
       </div>
