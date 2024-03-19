@@ -23,8 +23,8 @@ export default function about() {
             </p>
           </div>
         </div>
-        <div className="mx-5 flex flex-col md:lg:flex-row justify-center md:lg:xl:h-64 gap-10 mt-10 text-center animate-fade-down animate-delay-200 ">
-          <section className="rounded-2xl shadow  shadow-blue-300 lg:w-1/2 p-5 h-full">
+        <div className="mx-5 flex flex-col sm:md:lg:flex-row justify-center h-fit gap-10 mt-10 text-center animate-fade-down animate-delay-200 ">
+          <section className="rounded-2xl shadow  shadow-blue-300 lg:w-1/2 p-5 flex-1  ">
             <div>
               <Heading text={"Mission"}></Heading>
               <p className="text-wrap mt-3 leading-8 text-justify text-gray-700 m-3">
@@ -36,7 +36,7 @@ export default function about() {
               </p>
             </div>
           </section>
-          <section className="rounded-xl shadow  shadow-blue-300 lg:w-1/2 p-5  h-full ">
+          <section className="rounded-xl shadow  shadow-blue-300 lg:w-1/2 p-5     flex-1 ">
             <div>
               <Heading text={"Vision"}></Heading>
               <p className="text-wrap mt-3 leading-8 text-justify text-gray-700">
