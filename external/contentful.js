@@ -1,7 +1,7 @@
 
 import contentful from 'contentful';
 
-const client = contentful.createClient({
+const client = await contentful.createClient({
     space: process.env.SPACE,
     environment: "master",
     accessToken: process.env.ACCESS_TOKEN,
@@ -22,4 +22,8 @@ export async function fetchProjects() {
         console.error("Error fetching projects:", error);
         return [];
     }
+}
+
+export async function getClient() {
+    return client;
 }
