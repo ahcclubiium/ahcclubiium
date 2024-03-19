@@ -1,6 +1,5 @@
 
 import contentful from 'contentful';
-
 const client = await contentful.createClient({
     space: process.env.SPACE,
     environment: "master",

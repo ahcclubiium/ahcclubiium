@@ -1,7 +1,7 @@
 import Heading from "../components/Heading";
 import ProjectPostCard from "../components/ProjectPostCard";
 import {fetchProjects} from "@/external/contentful";
-const contentful = require("contentful");
+import contentful from "contentful";
 
 export default async function projectsPage() {
 

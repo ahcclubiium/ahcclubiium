@@ -19,10 +19,10 @@ export default function page() {
             <HeroText></HeroText>
           </section>
           <div className="lg:px-64">
-            <section className="py-10">
+            <section className="my-10">
               <div className="flex flex-col justify-center items-center  text-center">
                 <Heading text={"Activities"}></Heading>
-                <div className="items-center  justify-center md:lg:grid md:lg:grid-cols-3 gap-20 m-10">
+                <div className=" md:lg:grid md:lg:grid-cols-3 sm:grid-cols-2  gap-40  m-10">
                   <ActivityCard
                       activityDesc={
                         "Engage in discussions, learn strategies, and gain insights into tech entrepreneurship through informative sessions and interactive workshops"
