@@ -15,15 +15,15 @@ export default function page() {
   return (
     <section>
       <main>
-        <section className="h-screen flex justify-center items-center pb-20 bg-gradient-to-br	from-sky-300 via-white to-sky-300">
+        <section className="h-screen flex justify-center items-center pb-20 bg-gradient-to-br from-sky-300 via-white to-sky-300">
           <HeroText></HeroText>
         </section>
-        <div className="lg:px-64">
+        <div className="lg:px-4 sm:px-2">
           <section className="py-10">
             <div className="text-center">
               <Heading text={"Activities"}></Heading>
-              <div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 gap-10 mt-10">
-                <ActivityCard
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+              <ActivityCard
                   activityDesc={
                     "Engage in discussions, learn strategies, and gain insights into tech entrepreneurship through informative sessions and interactive workshops"
                   }
@@ -74,8 +74,8 @@ export default function page() {
           <div className="mb-5 text-center">
             <Heading text={"Membership perks"} lightFont={true}></Heading>
           </div>
-          <div className=" lg:grid grid-cols-3 gap-2 xl:px-72 lg:px-32">
-            <MembershipPerkCard
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:px-8">
+          <MembershipPerkCard
               title={"Participate in our workshops"}
               description={
                 "Sharpen your skills with exclusive workshops tailored to your interests and career goals. Learn from industry experts and gain hands-on experience to excel in your field."
@@ -113,16 +113,16 @@ export default function page() {
             ></MembershipPerkCard>
           </div>
         </section>
-        <section className="p-10">
-          <h2 className="text-3xl text-sky-700 font-bold text-center pb-8">
+        <section className="p-4">
+          <h2 className="text-3xl text-sky-700 font-bold text-center pb-4">
             Our collaborators
           </h2>
-          <div className="grid grid-cols-2 lg:flex justify-center gap-9">
-              <CollaboratorLogo image={"/images/iium.png"}></CollaboratorLogo>
-              <CollaboratorLogo image={"/images/kict.png"}></CollaboratorLogo>
-              <CollaboratorLogo image={"/images/cita.png"}></CollaboratorLogo>
-              <CollaboratorLogo image={"/images/mulhaq.png"}></CollaboratorLogo>
-              <CollaboratorLogo image={"/images/ictss_logo.jpg"}></CollaboratorLogo>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            <CollaboratorLogo image={"/images/iium.png"}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/kict.png"}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/cita.png"}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/mulhaq.png"}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/ictss_logo.jpg"}></CollaboratorLogo>
           </div>
         </section>
       </main>
