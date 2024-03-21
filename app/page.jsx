@@ -126,6 +126,7 @@ export default function page() {
           </div>
         </section>
       </main>
+      {/* just a comment */}
     </section>
   );
 }
