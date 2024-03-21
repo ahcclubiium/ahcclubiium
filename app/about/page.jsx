@@ -5,7 +5,7 @@ export default function about() {
   return (
     <section className="py-12">
       <div className=" lg:px-64 ">
-        <div className="flex justify-center animate-fade-down">
+        <div className="flex flex-col gap-8 justify-center animate-fade-down">
           <div className="mx-5 rounded-2xl border-1 shadow shadow-blue-300 p-6 ">
             <div className="text-center">
               <Heading text={"Background"}></Heading>
@@ -22,32 +22,60 @@ export default function about() {
               meaningful impact.
             </p>
           </div>
-        </div>
-        <div className="mx-5 flex flex-col sm:md:lg:flex-row justify-center h-fit gap-10 mt-10 text-center animate-fade-down animate-delay-200 ">
-          <section className="rounded-2xl shadow  shadow-blue-300 lg:w-1/2 p-5 flex-1  ">
-            <div>
+          <div className="mx-5 rounded-2xl border-1 shadow shadow-blue-300 p-6 ">
+            <div className="text-center">
               <Heading text={"Mission"}></Heading>
-              <p className="text-wrap mt-3 leading-8 text-justify text-gray-700 m-3">
-                Empower KICT students at IIUM Malaysia to become innovative
-                technopreneurs, leveraging their skills in information and
-                communication technology. Through education and collaboration,
-                we prepare them to drive positive change and contribute to the
-                global tech ecosystem.
-              </p>
             </div>
-          </section>
-          <section className="rounded-xl shadow  shadow-blue-300 lg:w-1/2 p-5     flex-1 ">
-            <div>
+            <ol className="text-wrap mt-3 leading-8 text-justify text-gray-700 m-3 list-decimal">
+              <li className="">
+                To offer thorough technical education, ensuring members gain
+                proficiency in key IT areas like web and mobile app development
+                through hands-on projects and workshops.
+              </li>
+              <li>
+                To cultivate business skills among members through tailored
+                training, seminars, and mentorship, empowering them with
+                strategic planning, financial management, and market analysis
+                expertise.
+              </li>
+              <li>
+                To foster a culture of innovation and collaboration,
+                facilitating idea exchange, interdisciplinary projects, and
+                networking events to encourage creative problem-solving and
+                exploration of new technologies.
+              </li>
+              <li>
+                To provide mentorship by industry experts and resources for
+                fundraising, legal compliance, and team building, ensuring
+                members receive guidance and support to overcome challenges and
+                achieve their entrepreneurial goals.
+              </li>
+              <li>
+                To promote ethical and sustainable practices, emphasizing social
+                responsibility and environmental sustainability in members'
+                ventures, aiming to create positive social impact alongside
+                financial success.
+              </li>
+            </ol>
+          </div>
+          <div className="mx-5 rounded-2xl border-1 shadow shadow-blue-300 p-6 ">
+            <div className="text-center">
               <Heading text={"Vision"}></Heading>
-              <p className="text-wrap mt-3 leading-8 text-justify text-gray-700">
-                To cultivate a vibrant community within KICT, where students are
-                inspired to harness their technological expertise for
-                entrepreneurial endeavors. We aspire to nurture a generation of
-                forward-thinking technopreneurs who lead with integrity,
-                creativity, and a commitment to Islamic values.
-              </p>
             </div>
-          </section>
+            <p className="text-wrap mt-3 leading-8 text-justify text-gray-700">
+              Motion-U Club envisions a future where aspiring technopreneurs are
+              equipped with a diverse range of IT skills, including web and
+              mobile application development, among others, enabling them to
+              create lucrative business opportunities. Complementing these
+              technical competencies, Motion-U Club also instills robust
+              business skills, fostering a holistic approach to
+              entrepreneurship. Through mentorship and a supportive community,
+              Motion-U Club aims to cultivate innovative leaders who seamlessly
+              integrate technical expertise with strategic thinking, poised to
+              revolutionize industries and drive impactful change in the dynamic
+              landscape of technology-driven entrepreneurship.
+            </p>
+          </div>
         </div>
       </div>
 
