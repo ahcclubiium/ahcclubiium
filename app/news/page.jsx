@@ -8,7 +8,7 @@ export default async function page() {
   const client = await contentful.createClient({
     space: process.env.SPACE,
     environment: "master",
-    accessToken: process.env.ACCESS_TOKEN,
+    accessToken: process.env.ACCESS_TOKEN, 
   });
   // const client = await getClient();
 
