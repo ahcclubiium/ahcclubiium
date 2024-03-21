@@ -14,6 +14,7 @@ import CollaboratorLogo from "./components/CollaboratorLogo";
 export default function page() {
   return (
     <section>
+      {/* tesitng */}
       <main>
         <section className="h-screen flex justify-center items-center pb-20 bg-gradient-to-br	from-sky-300 via-white to-sky-300">
           <HeroText></HeroText>
