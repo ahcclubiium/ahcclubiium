@@ -3,6 +3,8 @@ import Heading from "../components/Heading";
 // import { client } from "@/external/contentful";
 const contentful = require("contentful");
 
+export const revalidate = 10;
+
 export default async function page() {
     // DON'T TOUCH THIS PART
   const client = await contentful.createClient({
