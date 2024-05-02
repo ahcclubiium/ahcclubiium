@@ -116,14 +116,14 @@ export default function page() {
             Our collaborators
           </h2>
           <div className="flex flex-col items-center justify-center  md:lg:flex-row    gap-9">
-            <CollaboratorLogo image={"/images/iium.png"}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/kict.png"}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/cita.png"}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/mulhaq.png"}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/iium.png"} width={100} height={100}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/kict.png"} width={100} height={100}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/cita.png"} width={100} height={100}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/mulhaq.png"} width={100} height={100}></CollaboratorLogo>
             <CollaboratorLogo
-              image={"/images/ictss_logo.jpg"}
+              image={"/images/ictss_logo.jpg"} width={100} height={100}
             ></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/deta.png"}></CollaboratorLogo>
+            <CollaboratorLogo image={"/images/deta.png"} width={130} height={130}></CollaboratorLogo>
           </div>
         </section>
       </main>
