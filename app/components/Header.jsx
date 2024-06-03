@@ -11,9 +11,6 @@ export default function Header() {
 				<a href="/" className="transition ease-in-out hover:text-white/80">
 					Home
 				</a>
-				<a href="/about" className="transition ease-in-out hover:text-white/80">
-					About
-				</a>
 				<a href="/news" className="transition ease-in-out hover:text-white/80">
 					News
 				</a>
@@ -22,6 +19,12 @@ export default function Header() {
 					className="transition ease-in-out hover:text-white/80"
 				>
 					Contact us
+				</a>
+				<a
+					href="https://catwatch.onrender.com/"
+					className="transition ease-in-out hover:text-white/80"
+				>
+					Report
 				</a>
 			</div>
 		</header>
