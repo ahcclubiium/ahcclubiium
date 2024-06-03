@@ -22,24 +22,6 @@ export default function about() {
               Our mission is to be the rescuer of the animals in IIUM by volunteering and guide  other people to help animals in need. Showing mercy and share the love towards  animals which is also the creations of Allah swt.
             </p>
           </div>
-          <div className="mx-5 rounded-2xl border-1 shadow shadow-blue-300 p-6 ">
-            <div className="text-center">
-              <Heading text={"Vision"}></Heading>
-            </div>
-            <p className="text-wrap mt-3 leading-8 text-justify text-gray-700">
-              Motion-U Club envisions a future where aspiring technopreneurs are
-              equipped with a diverse range of IT skills, including web and
-              mobile application development, among others, enabling them to
-              create lucrative business opportunities. Complementing these
-              technical competencies, Motion-U Club also instills robust
-              business skills, fostering a holistic approach to
-              entrepreneurship. Through mentorship and a supportive community,
-              Motion-U Club aims to cultivate innovative leaders who seamlessly
-              integrate technical expertise with strategic thinking, poised to
-              revolutionize industries and drive impactful change in the dynamic
-              landscape of technology-driven entrepreneurship.
-            </p>
-          </div>
         </div>
       </div>
 

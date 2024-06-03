@@ -1,5 +1,3 @@
-import { FaEnvelope } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -46,7 +44,7 @@ export default function page() {
               <FaTwitter></FaTwitter>
             </a>
             <a
-              href="https://www.facebook.com/ahc.iium/"
+              href="https://www.facebook.com/ahc.iium"
               className="inline-block text-xl"
             >
               <FaFacebook></FaFacebook>
