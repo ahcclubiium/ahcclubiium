@@ -8,7 +8,7 @@ import LogoImage from "./LogoImage";
 
 export default function Footer() {
 	return (
-		<footer className="relative left-0 bottom-0 w-full px-10 md:px-80 py-10 mt-10 bg-sky-500 text-white font-semibold hover:text-white/90 border border-t-gray-300">
+		<footer className="relative left-0 bottom-0 w-full px-10 md:px-80 py-10 mt-10 bg-red-500 text-white font-semibold hover:text-white/90 border border-t-gray-300">
 			<div className="flex justify-between gap-8 py-5">
 				<div className="flex justify-center gap-7">
 					<a href="#">Home</a>

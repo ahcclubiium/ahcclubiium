@@ -10,6 +10,7 @@ export default function HeroText() {
       | WE SAVE , WE CARE |
       </p>
       <PrettyButton text={"Register Now"} link="https://www.google.com"></PrettyButton>
+      
     </div>
   );
 }
