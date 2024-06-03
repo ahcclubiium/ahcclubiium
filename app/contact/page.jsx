@@ -3,7 +3,7 @@ import { FaPhone } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import {FaFacebook} from "react-icons/fa"
 
 export default function page() {
   return (
@@ -15,42 +15,41 @@ export default function page() {
         <div className="flex justify-between my-8">
           <p className="font-semibold">Address</p>
           <p className="text-right">
-            Level 1, Kulliyyah of Information and Communication Technology –
-            KICT
+            Level X, Kuliyyah X
           </p>
         </div>
         <hr />
         <div className="flex justify-between my-8">
           <p className="font-semibold">Get in touch</p>
-          <a href="mailto:motionu.kict@gmail.com" className="text-right">motionu.kict@gmail.com</a>
+          <a href="mailto:abuhurairahclub@gmail.com" className="text-right">abuhurairahclub@gmail.com</a>
         </div>
         <hr />
         <div className="flex justify-between my-8">
           <p className="font-semibold">Social media</p>
           <div className="flex gap-4">
             <a
-              href="https://www.instagram.com/motionu.kict/"
+              href="https://www.instagram.com/ahc_iium/"
               className="inline-block text-xl"
             >
               <FaInstagram></FaInstagram>
             </a>
             <a
-              href="https://www.tiktok.com/@motionu.kict"
+              href="https://www.tiktok.com/@ahc_iiumt"
               className="inline-block text-xl"
             >
               <FaTiktok></FaTiktok>
             </a>
             <a
-              href="https://twitter.com/MotionUkict"
+              href="https://twitter.com/ahc_iium"
               className="inline-block text-xl"
             >
               <FaTwitter></FaTwitter>
             </a>
             <a
-              href="https://www.linkedin.com/company/motionukict/"
+              href="https://www.facebook.com/ahc.iium/"
               className="inline-block text-xl"
             >
-              <FaLinkedin></FaLinkedin>
+              <FaFacebook></FaFacebook>
             </a>
           </div>
         </div>

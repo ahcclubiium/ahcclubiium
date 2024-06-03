@@ -1,10 +1,9 @@
 "use client";
 
-import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import LogoImage from "./LogoImage";
 
 export default function Footer() {
@@ -21,7 +20,7 @@ export default function Footer() {
 				</div>
 				<div className="flex gap-4">
 					<a
-						href="https://www.instagram.com/motionu.kict/"
+						href="https://www.instagram.com/@ahc_iium/"
 						className="inline-block text-xl"
 					>
 						<FaInstagram></FaInstagram>
@@ -33,16 +32,16 @@ export default function Footer() {
 						<FaTiktok></FaTiktok>
 					</a>
 					<a
-						href="https://twitter.com/MotionUkict"
+						href="https://twitter.com/ahc_iium"
 						className="inline-block text-xl"
 					>
 						<FaTwitter></FaTwitter>
 					</a>
 					<a
-						href="https://www.linkedin.com/company/motionukict/"
+						href="https://www.facebook.com/ahc.iium/"
 						className="inline-block text-xl"
 					>
-						<FaLinkedin></FaLinkedin>
+						<FaFacebook></FaFacebook>
 					</a>
 				</div>
 			</div>

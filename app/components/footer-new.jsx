@@ -2,7 +2,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import LogoImage from "./LogoImage";
 
 const FooterNew = () => {
@@ -19,18 +18,30 @@ const FooterNew = () => {
 						<a href="#">Contact</a>
 					</div>
 					<div className="flex gap-4 text-xs sm:text-xl">
-						<a href="https://www.instagram.com/motionu.kict/">
-							<FaInstagram />
-						</a>
-						<a href="https://www.tiktok.com/@motionu.kict">
-							<FaTiktok />
-						</a>
-						<a href="https://twitter.com/MotionUkict">
-							<FaTwitter />
-						</a>
-						<a href="https://www.linkedin.com/company/motionukict/">
-							<FaLinkedin />
-						</a>
+					<a
+						href="https://www.instagram.com/@ahc_iium/"
+						className="inline-block text-xl"
+					>
+						<FaInstagram></FaInstagram>
+					</a>
+					<a
+						href="https://www.tiktok.com/@motionu.kict"
+						className="inline-block text-xl"
+					>
+						<FaTiktok></FaTiktok>
+					</a>
+					<a
+						href="https://twitter.com/ahc_iium"
+						className="inline-block text-xl"
+					>
+						<FaTwitter></FaTwitter>
+					</a>
+					<a
+						href="https://www.facebook.com/ahc.iium/"
+						className="inline-block text-xl"
+					>
+						<FaFacebook></FaFacebook>
+					</a>
 					</div>
 				</div>
 
