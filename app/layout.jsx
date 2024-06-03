@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Motion-U Club Official Website",
-  description: "This is Motion-U Club Official Website",
+  title: "Abu Hurairah Club IIUM",
+  description: "This is Abu Hurairah Club Official Website",
   keywords: [
     "technopreneurship",
     "technopreneurship club",

@@ -1,3 +1,4 @@
+//main page 
 import HeroText from "./components/HeroText";
 import Heading from "./components/Heading";
 import ActivityCard from "./components/ActivityCard";
@@ -63,7 +64,7 @@ export default function page() {
               <Heading text={"Our Mission"}></Heading>
             </div>
             <p className="text-wrap mt-3 leading-8 text-justify text-gray-700 m-3 list-decimal">
-              Our mission is to be the rescuer of the animals in IIUM by volunteering and guide  other people to help animals in need. Showing mercy and share the love towards  animals which is also the creations of Allah swt.
+              Our mission is to be the rescuer of the animals in IIUM by volunteering and guide  other people to help animals in need. Showing mercy and share the love towards animals which is also the creations of Allah swt.
             </p>
           </div>
         </div>

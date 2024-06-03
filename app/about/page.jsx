@@ -1,3 +1,4 @@
+//tkde impact
 import Heading from "../components/Heading";
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ export default function about() {
             <div className="text-center">
               <Heading text={"Introduction"}></Heading>
             </div>
-            <p className="text-wrap mt-3 leading-8 text-justify text-gray-700">
+            <p className="text-wrap mt-3 leading-8 text-justify text-gray-700 bg-red-900">
               The Abu Hurairah Club aims to give all homeless and abandoned cats and kittens a chance of survival and new home
             </p>
           </div>
@@ -19,7 +20,7 @@ export default function about() {
               <Heading text={"Our Mission"}></Heading>
             </div>
             <p className="text-wrap mt-3 leading-8 text-justify text-gray-700 m-3 list-decimal">
-              Our mission is to be the rescuer of the animals in IIUM by volunteering and guide  other people to help animals in need. Showing mercy and share the love towards  animals which is also the creations of Allah swt.
+              Our mission is to be the rescuer of the animals in IIUM by volunteering and guide  other people to help animals in need. Showing mercy and share the love towa
             </p>
           </div>
         </div>
