@@ -1,11 +1,9 @@
-//main page 
+//main page
 import HeroText from "./components/HeroText";
 import Heading from "./components/Heading";
 import ActivityCard from "./components/ActivityCard";
 import Image from "next/image";
-import { FaBookReader } from "react-icons/fa";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { FaTrophy } from "react-icons/fa6";
+
 
 export default function page() {
   return (
@@ -13,6 +11,56 @@ export default function page() {
       <main>
         <section className="h-screen flex justify-center items-center pb-20	bg-black via-white to-sky-300">
           <HeroText></HeroText>
+        </section>
+        <section>
+          <div>
+            <div className="flex flex-row items-center m-48 gap-24 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
+              <Image
+                src="/images/ahcstory1.png"
+                width={400}
+                height={400}
+                className="w-[450px] h-[400px] object-contain"
+              ></Image>
+              <p className="text-xl text-black p-10">
+                dedicated to protecting the rights and well-being of cats.
+                Members work to ensure cats receive proper care and respect,
+                promoting ethical standards among cat owners, breeders, and
+                shelters. Through campaigns and community engagement, the club
+                aims to create a safe and happy world for all cats.
+              </p>
+            </div>
+            <div className="flex flex-row items-center m-48 gap-24 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
+              <p className="text-xl text-black p-10">
+                operates a network of foster homes and works with local shelters
+                to find permanent homes for rescued cats. Through adoption fairs
+                and online platforms, the Cat Club connects cats in need with
+                caring families, ensuring each cat finds a loving home.
+              </p>
+              <Image
+                src="/images/ahcstory2.png"
+                width={400}
+                height={400}
+                className="w-[450px] h-[400px] object-contain"
+              ></Image>
+            </div>
+            <div className="flex flex-row items-center m-48 gap-24 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
+              <Image
+                src="/images/ahcstory2.png"
+                width={400}
+                height={400}
+                className="w-[450px] h-[400px] object-contain"
+              ></Image>
+              <p className="text-xl text-black p-10">
+                Raising awareness about feline issues is a key part of the Cat
+                Club's mission. The club organizes educational programs to
+                inform the public about responsible cat ownership, the benefits
+                of spaying and neutering, and the dangers of declawing. Through
+                workshops and social media, the club shares knowledge about
+                common health and behavioral issues, providing resources to help
+                cat owners offer the best care possible.
+              </p>
+            </div>
+          </div>
         </section>
         <section className="my-10">
           <div className="flex flex-col justify-center items-center  text-center">
@@ -37,7 +85,7 @@ export default function page() {
                 }
                 activityImage={
                   <Image
-                    src="/images/volunteer.png"
+                    src="/images/volunteer1.png"
                     width={50}
                     height={50}
                     class=""
