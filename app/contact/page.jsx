@@ -6,7 +6,7 @@ import {FaFacebook} from "react-icons/fa"
 export default function page() {
   return (
     <section className="text-center flex flex-col flex-grow min-h-screen lg:text-left lg:mx-40 text-gray-700">
-      <h1 className="text-3xl lg:text-6xl font-bold text-sky-800 inline-block mx-5 mt-10 lg:mt-20">
+      <h1 className="text-3xl lg:text-6xl font-bold text-black inline-block mx-5 mt-10 lg:mt-20">
         Contact us!
       </h1>
       <div className="lg:w-1/2 m-5">

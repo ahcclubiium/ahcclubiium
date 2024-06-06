@@ -10,7 +10,7 @@ export const metadata = {
   title: "Abu Hurairah Club IIUM",
   description: "This is Abu Hurairah Club Official Website",
   keywords: [
-    "technopreneurship",
+    "iium cat club",
     "technopreneurship club",
     "entrepreneurship",
     "entrepreneurship club",

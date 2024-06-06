@@ -11,18 +11,25 @@ export default function page() {
       <main>
         <section className="h-screen flex justify-center items-center pb-20	bg-black via-white to-sky-300">
           <HeroText></HeroText>
+          <Image
+            src="/favicon.ico"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="absolute top-4 left-4"
+          />
         </section>
         <section>
           <div>
-            <div className="flex flex-row items-center m-48 gap-24 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
+            <div className="flex flex-row items-center m-40 gap-1 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
               <Image
                 src="/images/ahcstory1.png"
                 width={400}
                 height={400}
-                className="w-[450px] h-[400px] object-contain"
+                className="mx-20 w-[450px] h-[400px] object-contain"
               ></Image>
               <p className="text-xl text-black p-10">
-                dedicated to protecting the rights and well-being of cats.
+                Dedicated to protecting the rights and well-being of cats.
                 Members work to ensure cats receive proper care and respect,
                 promoting ethical standards among cat owners, breeders, and
                 shelters. Through campaigns and community engagement, the club
@@ -31,7 +38,7 @@ export default function page() {
             </div>
             <div className="flex flex-row items-center m-48 gap-24 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
               <p className="text-xl text-black p-10">
-                operates a network of foster homes and works with local shelters
+                Operates a network of foster homes and works with local shelters
                 to find permanent homes for rescued cats. Through adoption fairs
                 and online platforms, the Cat Club connects cats in need with
                 caring families, ensuring each cat finds a loving home.
@@ -40,15 +47,15 @@ export default function page() {
                 src="/images/ahcstory2.png"
                 width={400}
                 height={400}
-                className="w-[450px] h-[400px] object-contain"
+                className=" w-[450px] h-[400px] object-contain"
               ></Image>
             </div>
-            <div className="flex flex-row items-center m-48 gap-24 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
+            <div className="flex flex-row items-center m-48 gap-10 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
               <Image
                 src="/images/ahcstory2.png"
                 width={400}
                 height={400}
-                className="w-[450px] h-[400px] object-contain"
+                className="mx-20 w-[400] h-[400px] object-contain"
               ></Image>
               <p className="text-xl text-black p-10">
                 Raising awareness about feline issues is a key part of the Cat
