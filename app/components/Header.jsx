@@ -13,6 +13,9 @@ export default function Header() {
         <a href="/" className="transition ease-in-out hover:text-white/80">
           Home
         </a>
+        <a href="/" className="transition ease-in-out hover:text-white/80">
+          About
+        </a>
         <a href="/news" className="transition ease-in-out hover:text-white/80">
           News
         </a>

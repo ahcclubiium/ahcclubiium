@@ -3,22 +3,18 @@ import HeroText from "./components/HeroText";
 import Heading from "./components/Heading";
 import ActivityCard from "./components/ActivityCard";
 import Image from "next/image";
+import Organization from "./components/Organization";
+import HeroText2 from "./components/HeroText2";
 
 
 export default function page() {
   return (
     <section>
       <main>
-        <section className="h-screen flex justify-center items-center pb-20	bg-black via-white to-sky-300">
-          <HeroText></HeroText>
-          <Image
-            src="/favicon.ico"
-            alt="Logo"
-            width={32}
-            height={32}
-            className="absolute top-4 left-4"
-          />
+        <section className="h-screen flex justify-center items-center pb-20">
+          <HeroText2></HeroText2>
         </section>
+        {/* Stories */}
         <section>
           <div>
             <div className="flex flex-row items-center m-40 gap-1 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
@@ -52,7 +48,7 @@ export default function page() {
             </div>
             <div className="flex flex-row items-center m-48 gap-10 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
               <Image
-                src="/images/ahcstory2.png"
+                src="/images/image-3.png"
                 width={400}
                 height={400}
                 className="mx-20 w-[400] h-[400px] object-contain"
@@ -69,6 +65,8 @@ export default function page() {
             </div>
           </div>
         </section>
+
+        {/* activitites */}
         <section className="my-10">
           <div className="flex flex-col justify-center items-center  text-center">
             <Heading text={"Activities"}></Heading>
@@ -117,6 +115,8 @@ export default function page() {
             </div>
           </div>
         </section>
+
+        {/* intro and mission  */}
         <section className="py-12">
           <div className="lg:px-64 ">
             <div className="flex flex-col gap-8 justify-center animate-fade-down">
@@ -142,6 +142,11 @@ export default function page() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* organization chart */}
+        <section>
+          <Organization></Organization>
         </section>
       </main>
       {/* just a comment */}
