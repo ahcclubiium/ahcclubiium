@@ -10,7 +10,7 @@ export default function HeroText2() {
         height={400}
         className=" object-cover w-screen h-screen"
       ></Image>
-      <div className="absolute w-[100rem] h-screen inset-0 bg-black bg-opacity-85">
+      <div className="absolute w-screen h-screen inset-0 bg-black bg-opacity-85">
         <div className="">
           <div className="text-center animate-fade-up animate-ease-out py-20 md:py-32 lg:py-40 ">
             <h1 className="text-5xl font-extrabold text-white text-nowrap lg:text-8xl md:text-9xl">
