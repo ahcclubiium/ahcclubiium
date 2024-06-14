@@ -8,7 +8,7 @@ export default function HeroText2() {
         src="/images/cat1.jpg"
         width={400}
         height={400}
-        className=" object-cover w-[100rem] h-screen"
+        className=" object-cover w-screen h-screen"
       ></Image>
       <div className="absolute w-[100rem] h-screen inset-0 bg-black bg-opacity-85">
         <div className="">
