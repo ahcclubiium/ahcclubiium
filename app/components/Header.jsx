@@ -14,7 +14,7 @@ export default function Header() {
           Home
         </a>
         <a href="/" className="transition ease-in-out hover:text-white/80">
-          About
+          Donation
         </a>
         <a href="/news" className="transition ease-in-out hover:text-white/80">
           Program

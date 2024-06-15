@@ -1,10 +1,10 @@
 //main page
-import HeroText from "./components/HeroText";
 import Heading from "./components/Heading";
 import ActivityCard from "./components/ActivityCard";
 import Image from "next/image";
 import Organization from "./components/Organization";
-import HeroText2 from "./components/HeroText2";
+import HeroText from "./components/HeroText";
+import HeadingAboutus from "./components/HeadingAboutus";
 
 
 export default function page() {
@@ -12,24 +12,24 @@ export default function page() {
     <section>
       <main>
         <section className="h-screen flex justify-center items-center pb-20">
-          <HeroText2></HeroText2>
+          <HeroText></HeroText>
         </section>
 
         {/* intro and mission  */}
         <section className="py-12">
           <div className="lg:px-64">
-            <div className="flex flex-col justify-center items-center text-center mt-20">
-              <Heading text={"About Us"}></Heading>
+            <div className="flex flex-col justify-center items-center text-center mt-20 ">
+              <HeadingAboutus text={"About Us"}></HeadingAboutus>
             </div>
-          <div className="absolute left-0">
-                <Image
-                  src="/images/CAT PAW 1.png"
-                  width={800}
-                  height={800}
-                  className="object-cover"
-                />
+            <div className="absolute left-0">
+              <Image
+                src="/images/CAT PAW 1.png"
+                width={800}
+                height={800}
+                className="object-cover"
+              />
             </div>
-            <div className="flex flex-col gap-8 justify-center items-center animate-fade-down">
+            <div className="flex flex-col gap-4 justify-center items-center animate-fade-down">
               <div className="flex flex-col justify-center items-center">
                 <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2 border-black absolute top mt-8">
                   <Heading text={"Introduction"}></Heading>
@@ -53,7 +53,7 @@ export default function page() {
             </div>
           </div>
         </section>
-        
+
         {/* Stories */}
         <section>
           <div>
@@ -115,7 +115,7 @@ export default function page() {
             <Heading text={""}></Heading>
             <div className=" md:lg:grid md:lg:grid-cols-3 sm:grid-cols-2 gap-10 m-10">
               {/* change cols number here */}
-              <ActivityCard 
+              <ActivityCard
                 activityDesc={"Saving Cats with Care and Compassion"}
                 activityImage={
                   <Image
