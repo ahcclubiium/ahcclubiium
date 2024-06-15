@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Organization() {
     return (
       <div className="flex justify-center flex-col items-center">
-        <h1 className="text-center font-bold text-3xl m-24 ">
+        <h1 className="text-center font-bold text-3xl mt-10 m-10">
           Organization Chart
         </h1>
         <Image

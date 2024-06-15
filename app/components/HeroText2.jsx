@@ -10,7 +10,7 @@ export default function HeroText2() {
         height={400}
         className=" object-cover w-screen h-screen"
       ></Image>
-      <div className="absolute w-screen h-screen inset-0 bg-black bg-opacity-85">
+      <div className="absolute w-screen h-screen inset-0 bg-black bg-opacity-75">
         <div className="">
           <div className="text-center animate-fade-up animate-ease-out py-20 md:py-32 lg:py-40 ">
             <h1 className="text-5xl font-extrabold text-white text-nowrap lg:text-8xl md:text-9xl">
@@ -19,11 +19,21 @@ export default function HeroText2() {
             <p className="text-white font-bold tracking-widest text-4xl my-9 drop-shadow-lg">
               | WE SAVE, WE CARE |
             </p>
-            <PrettyButton
-              text="Register Now"
-              link="https://www.google.com"
-              className="mt-12"
-            ></PrettyButton>
+            <div className="inline-block mt-12 relative">
+              <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-10">
+                <Image
+                  src="/images/cat-removebg-preview 2.png"
+                  width={100}
+                  height={100}
+                  className="object-contain mt-1"
+                />
+              </div>
+              <PrettyButton
+                text="Register Now"
+                link="https://www.google.com"
+                className="relative z-10"
+              ></PrettyButton>
+            </div>
           </div>
         </div>
       </div>

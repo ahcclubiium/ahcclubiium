@@ -14,9 +14,52 @@ export default function page() {
         <section className="h-screen flex justify-center items-center pb-20">
           <HeroText2></HeroText2>
         </section>
+
+        {/* intro and mission  */}
+        <section className="py-12">
+          <div className="lg:px-64">
+            <div className="flex flex-col justify-center items-center text-center mt-20">
+              <Heading text={"About Us"}></Heading>
+            </div>
+          <div className="absolute left-0">
+                <Image
+                  src="/images/CAT PAW 1.png"
+                  width={800}
+                  height={800}
+                  className="object-cover"
+                />
+            </div>
+            <div className="flex flex-col gap-8 justify-center items-center animate-fade-down">
+              <div className="flex flex-col justify-center items-center">
+                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2 border-black absolute top mt-8">
+                  <Heading text={"Introduction"}></Heading>
+                </div>
+                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2 border-black mt-64">
+                  The Abu Hurairah Club aims to give all homeless and abandoned
+                  cats and kittens a chance of survival and new home
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2 border-black absolute top">
+                  <Heading text={"Our Mission"}></Heading>
+                </div>
+                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2 border-black mt-64">
+                  Our mission is to be the rescuer of the animals in IIUM by
+                  volunteering and guide other people to help animals in need.
+                  Showing mercy and share the love towards animals which is also
+                  the creations of Allah swt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         {/* Stories */}
         <section>
           <div>
+            <div className="flex flex-col justify-center items-center text-center mt-20">
+              <Heading text={"Activities"}></Heading>
+            </div>
             <div className="flex flex-row items-center m-40 gap-1 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
               <Image
                 src="/images/ahcstory1.png"
@@ -67,16 +110,16 @@ export default function page() {
         </section>
 
         {/* activitites */}
-        <section className="my-10">
-          <div className="flex flex-col justify-center items-center  text-center">
-            <Heading text={"Activities"}></Heading>
+        <section className="my-20 flex justify-center w-screen h-screen bg-red-300">
+          <div className="flex flex-col justify-center items-center text-center">
+            <Heading text={""}></Heading>
             <div className=" md:lg:grid md:lg:grid-cols-3 sm:grid-cols-2 gap-10 m-10">
               {/* change cols number here */}
-              <ActivityCard
+              <ActivityCard 
                 activityDesc={"Saving Cats with Care and Compassion"}
                 activityImage={
                   <Image
-                    src="/images/rescue.jpg"
+                    src="/images/rescue.png"
                     width={70}
                     height={70}
                     class=""
@@ -91,8 +134,8 @@ export default function page() {
                 activityImage={
                   <Image
                     src="/images/volunteer1.png"
-                    width={50}
-                    height={50}
+                    width={70}
+                    height={70}
                     class=""
                   ></Image>
                 }
@@ -112,34 +155,6 @@ export default function page() {
                 }
                 activityTitle={"Cat Adoption "}
               ></ActivityCard>
-            </div>
-          </div>
-        </section>
-
-        {/* intro and mission  */}
-        <section className="py-12">
-          <div className="lg:px-64 ">
-            <div className="flex flex-col gap-8 justify-center animate-fade-down">
-              <div className="mx-5 rounded-2xl border-1 shadow shadow-blue-300 p-6 ">
-                <div className="text-center">
-                  <Heading text={"Introduction"}></Heading>
-                </div>
-                <p className="text-wrap mt-3 leading-8 text-justify text-gray-700">
-                  The Abu Hurairah Club aims to give all homeless and abandoned
-                  cats and kittens a chance of survival and new home
-                </p>
-              </div>
-              <div className="mx-5 rounded-2xl border-1 shadow shadow-blue-300 p-6 ">
-                <div className="text-center">
-                  <Heading text={"Our Mission"}></Heading>
-                </div>
-                <p className="text-wrap mt-3 leading-8 text-justify text-gray-700 m-3 list-decimal">
-                  Our mission is to be the rescuer of the animals in IIUM by
-                  volunteering and guide other people to help animals in need.
-                  Showing mercy and share the love towards animals which is also
-                  the creations of Allah swt.
-                </p>
-              </div>
             </div>
           </div>
         </section>

@@ -17,7 +17,7 @@ export default function Header() {
           About
         </a>
         <a href="/news" className="transition ease-in-out hover:text-white/80">
-          News
+          Program
         </a>
         <a
           href="https://catwatch.onrender.com/"
