@@ -13,10 +13,10 @@ export default function Header() {
         <a href="/" className="transition ease-in-out hover:text-white/80">
           Home
         </a>
-        <a href="/" className="transition ease-in-out hover:text-white/80">
+        <a href="/donation" className="transition ease-in-out hover:text-white/80">
           Donation
         </a>
-        <a href="/news" className="transition ease-in-out hover:text-white/80">
+        <a href="/program" className="transition ease-in-out hover:text-white/80">
           Program
         </a>
         <a
