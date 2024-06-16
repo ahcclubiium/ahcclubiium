@@ -1,4 +1,4 @@
-export default function HeadingAboutus({ text, lightFont }) {
+export default function HeadingMain({ text, lightFont }) {
   const isLightFont = lightFont ? "text-white" : "text-black";
   return (
     <h2

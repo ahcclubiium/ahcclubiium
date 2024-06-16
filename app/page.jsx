@@ -4,7 +4,7 @@ import ActivityCard from "./components/ActivityCard";
 import Image from "next/image";
 import Organization from "./components/Organization";
 import HeroText from "./components/HeroText";
-import HeadingAboutus from "./components/HeadingAboutus";
+import HeadingAboutus from "./components/HeadingMain";
 import PrettyButton from "./components/PrettyButton";
 
 export default function page() {
@@ -58,7 +58,7 @@ export default function page() {
         <section>
           <div>
             <div className="flex flex-col justify-center items-center text-center mt-20">
-              <Heading text={"Activities"}></Heading>
+              <HeadingAboutus text={"Activities"}></HeadingAboutus>
             </div>
             <div className="flex flex-row items-center m-40 gap-1 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
               <Image
@@ -204,6 +204,7 @@ export default function page() {
 
         {/* organization chart */}
         <section>
+
           <div className="mt-40">
             <Organization></Organization>
           </div>
