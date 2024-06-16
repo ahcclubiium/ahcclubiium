@@ -1,25 +1,16 @@
 import Heading from "../components/Heading";
 import Image from "next/image";
 import PrettyButton from "../components/PrettyButton";
+import Donation from "../components/Donation";
 
 export default function donation() {
   return (
-    <div className="bg-gray-900 text-white py-20 md:py-32 lg:py-40">
+    <div className=" text-white   ">
+      <Donation></Donation>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center animate-fade-up animate-ease-out">
-          <h1 className="text-5xl font-extrabold text-white text-nowrap lg:text-8xl md:text-9xl">
-            OPEN FOR DONATION
-          </h1>
-          {/* <>buat ke kiri </> */}
-          
-          <PrettyButton
-            text="Donate Here"
-            link="https://www.google.com"
-            className="mt-12"
-          ></PrettyButton>
-          {/* <>Buat ke kanan</> */}
-        </div>
+        {/* OPEN FOR DONATION AND THE BUTTON */}
 
+        {/* DONATION WORD  */}
         <div className="mt-20 lg:mt-32 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <Heading text="Our Mission" lightFont />
@@ -37,7 +28,10 @@ export default function donation() {
               <li>- Distribute food and supplies to families in need</li>
               <li>- Provide access to quality education and healthcare</li>
               <li>- Invest in sustainable community development projects</li>
-              <li>- Support vulnerable populations, such as orphans and the elderly</li>
+              <li>
+                - Support vulnerable populations, such as orphans and the
+                elderly
+              </li>
             </ul>
           </div>
         </div>
@@ -63,11 +57,10 @@ export default function donation() {
         <div className="mt-20 lg:mt-32 text-center">
           <Heading text="Join Us in Making a Difference" lightFont />
           <p className="text-gray-400 mt-6 text-lg leading-relaxed">
-            Your contribution, no matter how small, can have a profound impact on
-            the lives of those in need. Together, we can build a more
+            Your contribution, no matter how small, can have a profound impact
+            on the lives of those in need. Together, we can build a more
             compassionate and equitable world.
           </p>
-          
         </div>
       </div>
     </div>
