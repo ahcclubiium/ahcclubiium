@@ -5,7 +5,7 @@ import Image from "next/image";
 import Organization from "./components/Organization";
 import HeroText from "./components/HeroText";
 import HeadingAboutus from "./components/HeadingAboutus";
-
+import PrettyButton from "./components/PrettyButton";
 
 export default function page() {
   return (
@@ -31,19 +31,19 @@ export default function page() {
             </div>
             <div className="flex flex-col gap-4 justify-center items-center animate-fade-down">
               <div className="flex flex-col justify-center items-center">
-                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2 border-black absolute top mt-8">
+                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2 border-black absolute top mb-24">
                   <Heading text={"Introduction"}></Heading>
                 </div>
-                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2 border-black mt-64">
+                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2 border-black mt-28">
                   The Abu Hurairah Club aims to give all homeless and abandoned
                   cats and kittens a chance of survival and new home
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2 border-black absolute top">
+                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2 border-black absolute top mb-40">
                   <Heading text={"Our Mission"}></Heading>
                 </div>
-                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2 border-black mt-64">
+                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2 border-black mt-20">
                   Our mission is to be the rescuer of the animals in IIUM by
                   volunteering and guide other people to help animals in need.
                   Showing mercy and share the love towards animals which is also
@@ -120,9 +120,9 @@ export default function page() {
                 activityImage={
                   <Image
                     src="/images/rescue.png"
-                    width={70}
-                    height={70}
-                    class=""
+                    width={150}
+                    height={150}
+                    className=""
                   ></Image>
                 }
                 activityTitle={"Cat Rescue"}
@@ -132,12 +132,14 @@ export default function page() {
                   "Educating IIUM community about responsible pet ownership and animal welfare with volunteers."
                 }
                 activityImage={
-                  <Image
+                  <div className="">
+                    <Image
                     src="/images/volunteer1.png"
-                    width={70}
-                    height={70}
-                    class=""
+                    width={150}
+                    height={150}
+                    className=""
                   ></Image>
+                  </div>
                 }
                 activityTitle={"Awareness and Volunterism"}
               ></ActivityCard>
@@ -148,20 +150,63 @@ export default function page() {
                 activityImage={
                   <Image
                     src="/images/catAdoption.png"
-                    width={70}
-                    height={70}
-                    class=""
+                    width={150}
+                    height={150}
+                    className=""
                   ></Image>
                 }
-                activityTitle={"Cat Adoption "}
+                activityTitle={"Cat Adoption"}
               ></ActivityCard>
             </div>
           </div>
         </section>
 
+        {/* program */}
+        <section>
+          <div className="my-50 px-40">
+            <div className="flex flex-col justify-center items-center text-center p-10 m-20">
+              <Heading text={"Program"}></Heading>
+            </div>
+            <div className="absolute left-0 mt-60">
+              <Image
+                src="/images/CAT PAW 1.png"
+                width={300}
+                height={300}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-row justify-center items-center">
+              <div className="transform translate-x-32">
+              <div className="w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
+                <h3 className="text-5xl font-bold text-white py-8">
+                  Latest Program
+                </h3>
+                <div className="p-10">
+                <PrettyButton
+                  text="Read More"
+                  link="https://www.google.com"
+                  className="relative z-10"
+                ></PrettyButton>
+                </div>
+              </div>
+              </div>
+              <div className="pl-20">
+                  <Image
+                    src="/images/ahcprogram 3.png"
+                    width={600}
+                    height={600}
+                    className="object-contain"
+                  ></Image>
+                </div>
+            </div>  
+          </div>
+        </section>
+
         {/* organization chart */}
         <section>
-          <Organization></Organization>
+          <div className="mt-40">
+            <Organization></Organization>
+          </div>
         </section>
       </main>
       {/* just a comment */}

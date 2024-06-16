@@ -25,7 +25,7 @@ export default function HeroText() {
                   src="/images/cat-removebg-preview 2.png"
                   width={400}
                   height={400}
-                  className="object-contain "
+                  className="object-contain mt-1"
                 />
               </div>
               <PrettyButton
