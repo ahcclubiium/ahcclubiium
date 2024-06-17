@@ -4,8 +4,7 @@ import { createClient } from "contentful";
 
 export default async function News({ params }) {
   const client = createClient({
-    space: SPACE_ID,
-    accessToken: ACCESS_TOKEN,
+    
   });
 
   try {
