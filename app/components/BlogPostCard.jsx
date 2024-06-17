@@ -11,8 +11,8 @@ export default function BlogPostCard({ key, title, thumbnail, desc }) {
           src={imageUrl}
           height={1100}
           width={1500}
+          alt={title || "blog post image"}
           className="rounded-t-2xl"
-          alt={title}
         ></Image>
         <div className="p-3 py-4">
           <h2 className="text-2xl text-sky-800 font-bold">{title}</h2>
