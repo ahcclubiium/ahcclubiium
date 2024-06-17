@@ -4,8 +4,8 @@ import { createClient } from "contentful";
 
 export default async function News({ params }) {
   const client = createClient({
-    space: 'fb9e3gkpjnm6',
-    accessToken: 'YFXxdZmCP54QU2G_lgH0EunE2NyjJO2vILRCbuUn0FY'
+    space: SPACE_ID,
+    accessToken: ACCESS_TOKEN,
   });
 
   try {
@@ -36,7 +36,7 @@ export default async function News({ params }) {
         <section className="mx-10 lg:mx-72 my-10 text-justify">
           <p>{date}</p>
           {documentToReactComponents(document, options)}
-          <img src={'http://images.ctfassets.net/fb9e3gkpjnm6/Ahu9SJLXuBPg8O8ZKNrzv/856b1cebcc60bcdbfbbe1a53581b2c2e/ahcprogram1.jpg%22'} className="w-1/2 mx-auto" />
+          <img src={imageUrl} className="w-1/2 mx-auto" />
         </section>
       </>
     );

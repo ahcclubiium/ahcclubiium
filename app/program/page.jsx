@@ -4,9 +4,6 @@ import BlogPostCard from "../components/BlogPostCard";
 import Heading from "../components/Heading";
 import { createClient } from "contentful";
 
-const SPACE_ID = 'fb9e3gkpjnm6';
-// const ACCESS_TOKEN = 'CFPAT-GrEO2oP5dVRlQglfrYL1EqmdsdQFDq8sazdYxEFl0j8';
-const ACCESS_TOKEN = 'YFXxdZmCP54QU2G_lgH0EunE2NyjJO2vILRCbuUn0FY'
 
 export const revalidate = 10;
 

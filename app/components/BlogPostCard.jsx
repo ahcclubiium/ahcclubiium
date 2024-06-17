@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function BlogPostCard({ key, title, thumbnail, desc }) {
-  const imageUrl = thumbnail;
+  const imageUrl = `http:${thumbnail}`
 
   return (
     <a href={`/program/${key}`} className="hover:opacity-95">
