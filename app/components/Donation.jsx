@@ -31,7 +31,7 @@ export default function Donation() {
               <div className="bg-white bg-opacity-40 w-[23rem] h-[30rem] rounded-2xl">
                 <div>
                   <div>
-                    <h1 className="text-black p-6 font-extrabold text-2xl">
+                    <h1 className="text-black pl-6 pt-10 font-extrabold text-2xl">
                       CONTACT US
                     </h1>
                   </div>
