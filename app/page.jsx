@@ -165,7 +165,7 @@ export default function page() {
         <section>
           <div className="my-50 px-40">
             <div className="flex flex-col justify-center items-center text-center p-10 m-20">
-              <Heading text={"Program"}></Heading>
+              <HeadingAboutus text={"Program"}></HeadingAboutus>
             </div>
             <div className="absolute left-0 mt-60">
               <Image
