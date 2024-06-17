@@ -18,6 +18,23 @@ export default function page() {
         {/* intro and mission  */}
         <section className="py-12">
           <div className="lg:px-64">
+            <a href="">
+            <button className="text-center">
+            <div className="text-wrap w-36 h-40 flex flex-col text-xl font-bold shadow p-6 bg-[#FD775D] absolute left-0">
+                <h3 className="text-2xl font-bold text-black py-4">
+                  DONATE HERE
+                </h3>
+            </div>
+             <div className="">
+                <Image
+                  src="/images/cute donate cat.png"
+                  width={140}
+                  height={140}
+                  className="object-contain absolute left-20"
+                />
+              </div>
+            </button>
+            </a>
             <div className="flex flex-col justify-center items-center text-center mt-20 ">
               <HeadingAboutus text={"About Us"}></HeadingAboutus>
             </div>
@@ -26,7 +43,7 @@ export default function page() {
                 src="/images/CAT PAW 1.png"
                 width={800}
                 height={800}
-                className="object-cover"
+                className="object-cover mb-1"
               />
             </div>
             <div className="flex flex-col gap-4 justify-center items-center animate-fade-down">
