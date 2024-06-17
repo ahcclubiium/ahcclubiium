@@ -11,7 +11,7 @@ export default function page() {
   return (
     <section>
       <main>
-        <section className="h-screen flex justify-center items-center pb-20">
+        <section className="h-screen flex justify-center items-center ">
           <HeroText></HeroText>
         </section>
 

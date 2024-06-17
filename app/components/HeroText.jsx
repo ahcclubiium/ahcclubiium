@@ -19,20 +19,24 @@ export default function HeroText() {
             <p className="text-white font-bold tracking-widest text-4xl my-9 drop-shadow-lg">
               | WE SAVE, WE CARE |
             </p>
-            <div className="inline-block mt-12 relative">
-              <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-10">
+            <div className="inline-block mt-12 relative ">
+              <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-20">
                 <Image
                   src="/images/cat-removebg-preview 2.png"
                   width={400}
                   height={400}
-                  className="object-contain mt-1"
+                  className="object-contain mt-1 w-[24rem] h-16 "
                 />
               </div>
-              <PrettyButton
-                text="Register Now"
-                link="https://www.google.com"
-                className="relative z-10"
-              ></PrettyButton>
+             
+                <div className="mt-[0.5px]">
+                  <PrettyButton
+                    text="Register Now"
+                    link="https://www.google.com"
+                    className="relative z-10"
+                  ></PrettyButton>
+                </div>
+             
             </div>
           </div>
         </div>
