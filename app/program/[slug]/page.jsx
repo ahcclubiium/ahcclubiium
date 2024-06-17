@@ -1,10 +1,13 @@
+'use client'
+
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import { createClient } from "contentful";
 
 export default async function News({ params }) {
   const client = createClient({
-    
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
   });
 
   try {

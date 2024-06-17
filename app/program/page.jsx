@@ -4,17 +4,22 @@ import BlogPostCard from "../components/BlogPostCard";
 import Heading from "../components/Heading";
 import { createClient } from "contentful";
 
-
 export const revalidate = 10;
+
+const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID
+const CONTENTFUL_ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN
 
 export default function Page() {
   const [entries, setEntries] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+
+    
+
     const client = createClient({
-      space: SPACE_ID,
-      accessToken: ACCESS_TOKEN,
+      space: CONTENTFUL_SPACE_ID,
+      accessToken: CONTENTFUL_ACCESS_TOKEN,
     });
 
     client.getEntries({ content_type: "program" })
