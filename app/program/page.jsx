@@ -5,7 +5,7 @@ import ProgramCard from "../components/ProgramCard";
 const Program = () => {
   return (
     <div>
-      <div className="my-36 bg-[#FEB7A9] ">
+      <div className="h-full bg-[#FEB7A9] ">
         <h2
           className={"text-5xl text-[#8B2813] font-extrabold ml-64 py-10 z-20"}
         >
@@ -38,7 +38,7 @@ const Program = () => {
               }
             ></ProgramCard>
           </div>
-          <div className="absolute ml-[65rem] mt-[29rem]">
+          <div className="absolute right-0 top-[29rem]">
             <Image
               src="/images/CAT PAW 4.png"
               width={600}
