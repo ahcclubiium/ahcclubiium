@@ -196,7 +196,7 @@ export default function page() {
               <div className="transform translate-x-32">
               <div className="w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
                 <h3 className="text-5xl font-bold text-white py-8">
-                  Latest Program
+                <a href="/program" className="transition ease-in-out hover:text-white/80">Latest Program</a>
                 </h3>
                 <div className="p-10">
                 <PrettyButton
