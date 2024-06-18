@@ -41,7 +41,7 @@ export default function Header() {
           href="/program"
           className="transition ease-in-out hover:text-white/80"
         >
-          aik
+          
         </a>
       </div>
     </header>
