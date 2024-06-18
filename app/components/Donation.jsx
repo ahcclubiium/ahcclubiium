@@ -1,6 +1,5 @@
 import Image from "next/image";
-import PrettyButton from "./PrettyButton";
-import Heading from "./Heading";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Donation() {
   return (
@@ -9,56 +8,61 @@ export default function Donation() {
         src="/images/catDonate.png"
         width={400}
         height={400}
-        className=" object-cover w-screen h-screen"
-      ></Image>
-      <div className="absolute w-screen h-screen inset-0 bg-black bg-opacity-20">
-        <div className="">
-          {/* the content */}
-          <div className=" animate-fade-up animate-ease-out mt-24 flex flex-row justify-center gap-24">
-            <div className="w-[25rem]">
-              <h1 className="text-5xl font-extrabold">
-                OPEN <br />
-                FOR <br />
-                DONATION
+        className="object-cover w-screen h-screen"
+        alt="Donation"
+      />
+      <div className="absolute inset-0 w-full h-full bg-black bg-opacity-20 flex items-center justify-center">
+        <div className="animate-fade-up animate-ease-out mt-24 flex flex-col md:flex-row justify-center gap-12 md:gap-24">
+          <div className="w-full md:w-[25rem] text-center md:text-left px-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold">
+              OPEN <br />
+              FOR <br />
+              DONATION
+            </h1>
+            <p className="text-lg md:text-xl mt-6">
+              “Our mission is to provide shelter, food, and medical care to
+              stray and abandoned cats. Your support helps us save lives and
+              find loving homes for our feline friends.”
+            </p>
+          </div>
+          <div className="relative w-full md:w-auto">
+            <div className="bg-white bg-opacity-40 w-full md:w-[23rem] h-auto md:h-[30rem] rounded-2xl p-6 md:p-0">
+              <h1 className="text-black text-2xl font-extrabold md:pl-6 md:pt-10">
+                CONTACT US
               </h1>
-              <p className="text-xl mt-6">
-                “Our mission is to provide shelter, food, and medical care to
-                stray and abandoned cats. Your support helps us save lives and
-                find loving homes for our feline friends.”
-              </p>
-            </div>
-            <div className="relative">
-              <div className="bg-white bg-opacity-40 w-[23rem] h-[30rem] rounded-2xl">
-                <div>
-                  <div>
-                    <h1 className="text-black pl-6 pt-10 font-extrabold text-2xl">
-                      CONTACT US
-                    </h1>
-                  </div>
-                  {/* contact */}
-
-                  <div className="p-7 text-l">
-                    <div className="text-black mt-6 flex flex-row">
-                      <h1 className="font-bold">Email :</h1>
-                      <p>abuhurairahclubiium@gmail.com</p>
-                    </div>
-                    <div className="text-black mt-6 flex flex-row">
-                      <h1 className="font-bold">Instagram :</h1>
-                      <p>@ahc_iium</p>
-                    </div>
-                    <div className="text-black mt-6 flex flex-row">
-                      <h1 className="font-bold">Facebook :</h1>
-                      <p>Abu Hurairah Club IIUM</p>
-                    </div>
-                  </div>
+              <div className="text-black mt-6 space-y-4 md:space-y-6">
+                <div className="flex flex-col md:flex-row">
+                  <h1 className="font-bold md:w-28">Email:</h1>
+                  <p>abuhurairahclubiium@gmail.com</p>
+                </div>
+                <div className="flex flex-col md:flex-row">
+                  <h1 className="font-bold md:w-28">Instagram:</h1>
+                  <p>@ahc_iium</p>
+                </div>
+                <div className="flex flex-col md:flex-row">
+                  <h1 className="font-bold md:w-28">Facebook:</h1>
+                  <p>Abu Hurairah Club IIUM</p>
                 </div>
               </div>
-              {/* Separate button container */}
-              <div className="absolute bottom-4 right-4 opacity-100">
-                <button className="p-3 px-6 bg-[#FD775D] rounded-3xl text-white font-bold border-2 border-black w-40 hover:bg-red-600/80">
-                  Donate
-                </button>
+              <div className="flex justify-center mt-6 space-x-4">
+                <a
+                  href="https://www.instagram.com/@ahc_iium/"
+                  className="text-4xl"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://www.facebook.com/ahc.iium/"
+                  className="text-4xl"
+                >
+                  <FaFacebook />
+                </a>
               </div>
+            </div>
+            <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 opacity-100">
+              <button className="p-3 px-6 bg-[#FD775D] rounded-3xl text-white font-bold border-2 border-black w-full md:w-40 hover:bg-red-600/80">
+                Donate
+              </button>
             </div>
           </div>
         </div>

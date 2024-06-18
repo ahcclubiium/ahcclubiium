@@ -16,7 +16,7 @@ export default function Header() {
         <a href="/donation" className="transition ease-in-out hover:text-white/80">
           Donation
         </a>
-        <a href="/program" className="transition ease-in-out hover:text-white/80">
+        <a href="/program2" className="transition ease-in-out hover:text-white/80">
           Program
         </a>
         <a
