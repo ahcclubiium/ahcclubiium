@@ -1,62 +1,52 @@
-'use client'
-import React, { useState, useEffect } from "react";
-import BlogPostCard from "../components/BlogPostCard";
-import Heading from "../components/Heading";
-import { createClient } from "contentful";
+import React from "react";
+import Image from "next/image";
+import ProgramCard from "../components/ProgramCard";
 
-export const revalidate = 10;
-
-const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID
-const CONTENTFUL_ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN
-
-export default function Page() {
-  const [entries, setEntries] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-
-    
-
-    const client = createClient({
-      space: CONTENTFUL_SPACE_ID,
-      accessToken: CONTENTFUL_ACCESS_TOKEN,
-    });
-
-    client.getEntries({ content_type: "program" })
-      .then((response) => {
-        console.log("Fetched Entries:", response.items);
-        setEntries(response.items); // Update state with fetched items
-      })
-      .catch((error) => {
-        console.error("Error fetching Contentful data:", error);
-        setError(error);
-      });
-  }, []); // Empty dependency array ensures useEffect runs once on component mount
-
+export default function Program() {
   return (
-    <section>
-      <div className="text-center my-7">
-        <Heading text={"Programs"} />
-      </div>
-      <div className="lg:grid grid-cols-2 gap-4 gap-y-10 lg:mx-60 m-4">
-        {entries.map((entry) => (
-          <BlogPostCard
-            key={entry.sys.id}
-            title={entry.fields.title}
-            thumbnail={entry.fields.thumbnail?.fields?.file?.url || ""}
-            desc={entry.fields.description}
-          />
-        ))}
-      </div>
-      {error && (
-        <div className="text-center my-7">
-          <Heading text={"Error fetching data"} />
-          <div className="mt-3">
-            <p className="text-red-500">Details:</p>
-            <p>{error.message}</p> {/* Display error message */}
-          </div>
+    <div>
+      {/* variety of program section  */}
+      <div className="my-36 bg-[#FEB7A9] ">
+        <h2 className={"text-5xl text-[#8B2813] font-extrabold ml-64 py-10"}>
+          Program
+        </h2>
+        <Image
+          src="/images/catpow1.jpg"
+          width={800}
+          height={800}
+          className="object-cover mb-1"
+        />
+        <div className="flex flex-wrap mx-[7rem] gap-8">
+          <ProgramCard
+            image={"/images/animal-loving-carnival.jpeg"}
+            title={"national-cat-show-2023"}
+            description={
+              "On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️ "
+            }
+          ></ProgramCard>
+          <ProgramCard
+            image={"/images/animal-loving-carnival.jpeg"}
+            title={"national-cat-show-2023"}
+            description={
+              "On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️ "
+            }
+          ></ProgramCard>
+          <ProgramCard
+            image={"/images/animal-loving-carnival.jpeg"}
+            title={"national-cat-show-2023"}
+            description={
+              "On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️  On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️ "
+            }
+          ></ProgramCard>
+          <ProgramCard
+            image={"/images/animal-loving-carnival.jpeg"}
+            title={"national-cat-show-2023"}
+            description={
+              "On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️  On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️ "
+            }
+          ></ProgramCard>
         </div>
-      )}
-    </section>
+      </div>
+    </div>
   );
 }

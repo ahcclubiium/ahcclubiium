@@ -114,7 +114,7 @@ export default function page() {
                 className="mx-20 w-[400] h-[400px] object-contain"
               ></Image>
               <p className="text-xl text-black p-10">
-                Raising awareness about feline issues is a key part of the Cat
+                Raising amwareness about feline issues is a key part of the Cat
                 Club's mission. The club organizes educational programs to
                 inform the public about responsible cat ownership, the benefits
                 of spaying and neutering, and the dangers of declawing. Through
