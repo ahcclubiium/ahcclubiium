@@ -61,7 +61,8 @@ export default function Donation() {
             </div>
             <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 opacity-100">
               <button className="p-3 px-6 bg-[#FD775D] rounded-3xl text-white font-bold border-2 border-black w-full md:w-40 hover:bg-red-600/80">
-                Donate
+              <a href="https://docs.google.com/forms/u/0" className="transition ease-in-out hover:text-white/80">Donation</a>
+
               </button>
             </div>
           </div>

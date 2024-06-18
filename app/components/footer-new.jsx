@@ -26,7 +26,7 @@ const FooterNew = () => {
               <FaInstagram></FaInstagram>
             </a>
             <a
-              href="https://www.tiktok.com/@motionu.kict"
+              href="https://www.tiktok.com/@ahc_iium"
               className="inline-block text-xl"
             >
               <FaTiktok></FaTiktok>
