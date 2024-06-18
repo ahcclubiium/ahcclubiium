@@ -22,7 +22,7 @@ export default function page() {
             <button className="text-center">
             <div className="text-wrap w-36 h-40 flex flex-col text-xl font-bold shadow p-6 bg-[#FD775D] absolute left-0">
                 <h3 className="text-2xl font-bold text-black py-4">
-                  DONATE HERE
+                <a href="/donation" className="transition ease-in-out hover:text-white/80">DONATE HERE</a>
                 </h3>
             </div>
              <div className="">
@@ -114,7 +114,7 @@ export default function page() {
                 className="mx-20 w-[400] h-[400px] object-contain"
               ></Image>
               <p className="text-xl text-black p-10">
-                Raising amwareness about feline issues is a key part of the Cat
+                Raising awareness about feline issues is a key part of the Cat
                 Club's mission. The club organizes educational programs to
                 inform the public about responsible cat ownership, the benefits
                 of spaying and neutering, and the dangers of declawing. Through
