@@ -12,8 +12,8 @@ export default function Donation() {
         alt="Donation"
       />
       <div className="absolute inset-0 w-full h-full bg-black bg-opacity-20 flex items-center justify-center">
-        <div className="animate-fade-up animate-ease-out mt-24 flex flex-col md:flex-row justify-center gap-12 md:gap-24">
-          <div className="w-full md:w-[25rem] text-center md:text-left px-4">
+        <div className="animate-fade-up animate-ease-out mt-3 flex flex-col md:flex-row justify-center md:gap-24 lg:gap-[7rem]">
+          <div className="w-full md:w-[25rem] text-center md:text-left px-4 mr-[10rem]">
             <h1 className="text-4xl md:text-5xl font-extrabold">
               OPEN <br />
               FOR <br />
@@ -30,9 +30,9 @@ export default function Donation() {
               <h1 className="text-black text-2xl font-extrabold md:pl-6 md:pt-10">
                 CONTACT US
               </h1>
-              <div className="text-black mt-6 space-y-4 md:space-y-6">
+              <div className="text-black mt-6 space-y-4 mx-3 md:space-y-6">
                 <div className="flex flex-col md:flex-row">
-                  <h1 className="font-bold md:w-28">Email:</h1>
+                  <h1 className="font-bold   md:w-28">Email:</h1>
                   <p>abuhurairahclubiium@gmail.com</p>
                 </div>
                 <div className="flex flex-col md:flex-row">
@@ -44,7 +44,7 @@ export default function Donation() {
                   <p>Abu Hurairah Club IIUM</p>
                 </div>
               </div>
-              <div className="flex justify-center mt-6 space-x-4">
+              {/* <div className="flex justify-center mt-6 space-x-4">
                 <a
                   href="https://www.instagram.com/@ahc_iium/"
                   className="text-4xl"
@@ -57,7 +57,7 @@ export default function Donation() {
                 >
                   <FaFacebook />
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 opacity-100">
               <button className="p-3 px-6 bg-[#FD775D] rounded-3xl text-white font-bold border-2 border-black w-full md:w-40 hover:bg-red-600/80">
