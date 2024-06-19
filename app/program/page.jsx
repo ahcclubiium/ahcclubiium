@@ -27,7 +27,7 @@ const Program = () => {
               className="object-contain z-10"
             />
           </div>
-        <div className="grid grid-cols-2 mx-[5rem] relative z-20">
+        <div className="grid grid-cols-2 mx-[5rem] relative z-15">
           <div className="">
             <ProgramCard
               image={"/images/animal-loving-carnival.jpeg"}
