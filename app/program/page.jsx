@@ -11,15 +11,23 @@ const Program = () => {
         >
           Program
         </h2>
-        <div className="absolute mb-[24rem]">
+        <div className="absolute left-0">
           <Image
             src="/images/catpow1.png"
             width={400}
             height={400}
-            className=" z-10"
+            className="object-contain z-10"
           />
         </div>
-        <div className="grid grid-cols-2 mx-[5rem] z-20">
+        <div className="absolute right-0">
+            <Image
+              src="/images/CAT PAW 4.png"
+              width={600}
+              height={600}
+              className="object-contain z-10"
+            />
+          </div>
+        <div className="grid grid-cols-2 mx-[5rem] relative z-20">
           <div className="">
             <ProgramCard
               image={"/images/animal-loving-carnival.jpeg"}
@@ -37,14 +45,6 @@ const Program = () => {
                 "On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️  On 14th March, 2023, a group of students from Shenandoah University came to visit our cat shelter! We really appreciate it and hope to see you again! 😻♥️ "
               }
             ></ProgramCard>
-          </div>
-          <div className="absolute right-0 top-[29rem]">
-            <Image
-              src="/images/CAT PAW 4.png"
-              width={600}
-              height={600}
-              className=" z-10"
-            />
           </div>
           <div>
             <ProgramCard
