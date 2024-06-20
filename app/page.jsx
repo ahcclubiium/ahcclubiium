@@ -1,4 +1,6 @@
 //main page
+"use client";
+
 import Heading from "./components/Heading";
 import ActivityCard from "./components/ActivityCard";
 import Image from "next/image";
@@ -6,35 +8,83 @@ import Organization from "./components/Organization";
 import HeroText from "./components/HeroText";
 import HeadingAboutus from "./components/HeadingMain";
 import PrettyButton from "./components/PrettyButton";
+import { useRef, useEffect, useState } from "react";
 
 export default function page() {
+  const heroTextSectionRef = useRef(null);
+  const catImageRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {    //determine heroText position
+      const heroTextSection = heroTextSectionRef.current;
+      const catImage = catImageRef.current;
+
+      if (heroTextSection && catImage) {
+        const heroTextBottom = heroTextSection.getBoundingClientRect().bottom;  //detect HeroText bottom position
+
+        if (heroTextBottom <= 0) { //detect current position
+          setIsSticky(true); //if under HeroText div setSticky to tru
+        } else {
+          setIsSticky(false); //if at Herotext div setSticky to false
+        }
+      }
+    };
+
+    // Attach scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check pf initial position heroText
+    handleScroll();
+
+    // Clean up event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll); //prevent memory leaks
+    };
+  }, []); // Empty dependency array ensures the effect runs only once
   return (
     <section>
       <main>
-        <section className="h-screen flex justify-center items-center ">
+        <section
+          id="heroText"
+          ref={heroTextSectionRef}
+          className="h-screen flex justify-center items-center "
+        >
           <HeroText></HeroText>
         </section>
 
         {/* intro and mission  */}
         <section className="py-12">
           <div className="lg:px-64">
-            <a href="">
-            <button className="text-center">
-            <div className="text-wrap w-36 h-40 flex flex-col text-xl font-bold shadow p-6 bg-[#FD775D] absolute left-0">
-                <h3 className="text-2xl font-bold text-black py-4">
-                <a href="/donation" className="transition ease-in-out hover:text-white/80">DONATE HERE</a>
-                </h3>
+            <div
+              ref={catImageRef}  //to manipulate the DOM
+              className={`fixed left-0 top-[200px] mt-[3rem] z-10 ${
+                isSticky ? "block" : "hidden"
+              }`}
+              style={{ position: isSticky ? "fixed" : "absolute" }}
+            >
+              <button className="text-center">
+                <div className="text-wrap w-36 h-40 flex flex-col text-xl font-bold shadow p-6 bg-[#FD775D] absolute left-0">
+                  <h3 className="text-2xl font-bold text-black py-4">
+                    <a
+                      href="/donation"
+                      className="transition ease-in-out hover:text-white/80"
+                    >
+                      DONATE HERE
+                    </a>
+                  </h3>
+                </div>
+                <div className="ml-4">
+                  <Image
+                    src="/images/cute donate cat.png"
+                    width={140}
+                    height={140}
+                    className="object-contain  left-20  top-[200px] mt-[4rem] z-10 md:fixed "
+                  />
+                </div>
+              </button>
             </div>
-             <div className="">
-                <Image
-                  src="/images/cute donate cat.png"
-                  width={140}
-                  height={140}
-                  className="object-contain absolute left-20"
-                />
-              </div>
-            </button>
-            </a>
+
             <div className="flex flex-col justify-center items-center text-center mt-20 ">
               <HeadingAboutus text={"About Us"}></HeadingAboutus>
             </div>
@@ -151,11 +201,11 @@ export default function page() {
                 activityImage={
                   <div className="">
                     <Image
-                    src="/images/volunteer1.png"
-                    width={150}
-                    height={150}
-                    className=""
-                  ></Image>
+                      src="/images/volunteer1.png"
+                      width={150}
+                      height={150}
+                      className=""
+                    ></Image>
                   </div>
                 }
                 activityTitle={"Awareness and Volunterism"}
@@ -194,34 +244,38 @@ export default function page() {
             </div>
             <div className="flex flex-row justify-center items-center">
               <div className="transform translate-x-32">
-              <div className="w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
-                <h3 className="text-5xl font-bold text-white py-8">
-                  Latest Program
-                </h3>
-                <div className="p-10">
-                <PrettyButton
-                  text="Read More"
-                  link="https://www.google.com"
-                  className="relative z-10"
-                ></PrettyButton>
+                <div className="w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
+                  <h3 className="text-5xl font-bold text-white py-8">
+                    <a
+                      href="/program"
+                      className="transition ease-in-out hover:text-white/80"
+                    >
+                      Latest Program
+                    </a>
+                  </h3>
+                  <div className="p-10">
+                    <PrettyButton
+                      text="Read More"
+                      link="https://www.google.com"
+                      className="relative z-10"
+                    ></PrettyButton>
+                  </div>
                 </div>
-              </div>
               </div>
               <div className="pl-20">
-                  <Image
-                    src="/images/ahcprogram 3.png"
-                    width={600}
-                    height={600}
-                    className="object-contain"
-                  ></Image>
-                </div>
-            </div>  
+                <Image
+                  src="/images/ahcprogram 3.png"
+                  width={600}
+                  height={600}
+                  className="object-contain"
+                ></Image>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* organization chart */}
         <section>
-
           <div className="mt-40">
             <Organization></Organization>
           </div>

@@ -6,20 +6,17 @@ import { createClient } from "contentful";
 
 export const revalidate = 10;
 
-const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID
-const CONTENTFUL_ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN
+const CONTENTFUL_SPACE_ID='fb9e3gkpjnm6'
+const CONTENTFUL_ACCESS_KEY='YFXxdZmCP54QU2G_lgH0EunE2NyjJO2vILRCbuUn0FY'
 
 export default function Page() {
   const [entries, setEntries] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-
-    
-
     const client = createClient({
       space: CONTENTFUL_SPACE_ID,
-      accessToken: CONTENTFUL_ACCESS_TOKEN,
+      accessToken: CONTENTFUL_ACCESS_KEY,
     });
 
     client.getEntries({ content_type: "program" })
@@ -35,9 +32,12 @@ export default function Page() {
 
   return (
     <section>
-      <div className="text-center my-7">
-        <Heading text={"Programs"} />
-      </div>
+      <div>
+          <div className="my-36 bg-[#FEB7A9] ">
+         <h2 className={"text-5xl text-[#8B2813] font-extrabold ml-64 py-10"}>
+           <Heading text={"Programs"}/>
+         </h2>
+         </div>
       <div className="lg:grid grid-cols-2 gap-4 gap-y-10 lg:mx-60 m-4">
         {entries.map((entry) => (
           <BlogPostCard
@@ -57,6 +57,7 @@ export default function Page() {
           </div>
         </div>
       )}
+      </div>
     </section>
   );
 }

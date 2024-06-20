@@ -4,11 +4,20 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types";
 import { createClient } from "contentful";
 
+const CONTENTFUL_SPACE_ID='fb9e3gkpjnm6'
+const CONTENTFUL_ACCESS_KEY='YFXxdZmCP54QU2G_lgH0EunE2NyjJO2vILRCbuUn0FY'
+
 export default async function News({ params }) {
+  // const client = createClient({
+  //   space: process.env.CONTENTFUL_SPACE_ID,
+  //   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+  // });
+
   const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+    space: CONTENTFUL_SPACE_ID,
+    accessToken: CONTENTFUL_ACCESS_KEY,
   });
+
 
   try {
     const entry = await client.getEntry(params.slug);
