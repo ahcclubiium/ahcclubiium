@@ -13,7 +13,7 @@ export default function page() {
         <div className="flex justify-between my-8">
           <p className="font-semibold">Address</p>
           <p className="text-right">
-            Level X, Kuliyyah X
+          Jln Gombak, 53100 Kuala Lumpur, Selangor
           </p>
         </div>
         <hr />
