@@ -6,9 +6,9 @@ import { createClient } from "contentful";
 
 export default async function News({ params }) {
   const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
+    space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
     environment: "master", // defaults to 'master' if not set
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+    accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN
   });
 
   try {
