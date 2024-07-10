@@ -64,7 +64,7 @@ export default function page() {
               style={{ position: isSticky ? "fixed" : "absolute" }}
             >
               <button className="text-center">
-                <div className="text-wrap w-36 h-40 flex flex-col text-xl font-bold shadow p-6 bg-[#FD775D] absolute left-0">
+                <div className="text-wrap w-36 h-40 flex flex-col text-xl font-bold shadow p-6 bg-[#DAAF2C] absolute left-0">
                   <h3 className="text-2xl font-bold text-black py-4">
                     <a
                       href="/donation"
@@ -85,9 +85,9 @@ export default function page() {
               </button>
             </div>
 
-            <div className="flex flex-col justify-center items-center text-center mt-20 ">
+            {/* <div className="flex flex-col justify-center items-center text-center mt-20 ">
               <HeadingAboutus text={"About Us"}></HeadingAboutus>
-            </div>
+            </div> */}
             <div className="absolute left-0">
               <Image
                 src="/images/CAT PAW 1.png"
@@ -97,7 +97,7 @@ export default function page() {
               />
             </div>
             <div className="flex flex-col gap-20 justify-center items-center animate-fade-down">
-              <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
+              {/* <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
                 <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2  absolute top mb-24">
                   <Heading text={"Introduction"}></Heading>
                 </div>
@@ -105,12 +105,12 @@ export default function page() {
                   The Abu Hurairah Club aims to give all homeless and abandoned
                   cats and kittens a chance of survival and new home
                 </p>
-              </div>
+              </div> */}
               <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
-                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2  absolute top mb-40 ">
-                  <Heading text={"Our Mission"}></Heading>
+                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#BD9468] border-0  absolute top mb-40 ">
+                  <Heading text={"MISSION"}></Heading>
                 </div>
-                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2  mt-20">
+                <p className=" text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#FFD9B0] border-2  mt-20">
                   Our mission is to be the rescuer of the animals in IIUM by
                   volunteering and guide other people to help animals in need.
                   Showing mercy and share the love towards animals which is also

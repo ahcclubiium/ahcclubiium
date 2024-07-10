@@ -5,7 +5,7 @@ export default function Header() {
     <header
       className="
 		sticky left-0 top-0 w-full 
-		bg-[#FD775D] p-5 px-10 flex 
+		bg-[#C77D26] p-5 px-10 flex 
 		font-bold text-white z-10"
     >
       <LogoImage></LogoImage>
