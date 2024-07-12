@@ -46,7 +46,7 @@ const FooterNew = () => {
           </div>
         </div>
 
-        <hr />
+        
 
         <div className="flex flex-row items-center justify-between">
           <div className="flex gap-2 sm:gap-7 font-bold text-xs sm:text-xl">
