@@ -18,18 +18,27 @@ export default function Header() {
     <header
       className="
         sticky left-0 top-0 w-full 
-        bg-[#C77D26] p-5 px-10 flex 
+        bg-[#B89670] p-1 px-10 flex 
         font-bold text-white z-10"
     >
-      <LogoImage />
-      <div className="flex w-full justify-center gap-4 lg:gap-6 items-center">
-        <a href="/" className="nav-link transition ease-in-out hover:text-white/80">
+      {/* <LogoImage /> */}
+      <div className="flex w-full justify-center gap-4 lg:gap-14 items-center">
+        <a
+          href="/"
+          className="nav-link transition ease-in-out hover:text-white/80"
+        >
           Home
         </a>
-        <a href="/donation" className="nav-link transition ease-in-out hover:text-white/80">
+        <a
+          href="/donation"
+          className="nav-link transition ease-in-out hover:text-white/80"
+        >
           Donation
         </a>
-        <a href="/program" className="nav-link transition ease-in-out hover:text-white/80">
+        <a
+          href="/program"
+          className="nav-link transition ease-in-out hover:text-white/80"
+        >
           Program
         </a>
         <a
@@ -38,7 +47,10 @@ export default function Header() {
         >
           Report
         </a>
-        <a href="/contact" className="nav-link transition ease-in-out hover:text-white/80">
+        <a
+          href="/contact"
+          className="nav-link transition ease-in-out hover:text-white/80"
+        >
           Contact us
         </a>
       </div>

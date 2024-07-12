@@ -16,14 +16,16 @@ export default function page() {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {    //determine heroText position
+    const handleScroll = () => {
+      //determine heroText position
       const heroTextSection = heroTextSectionRef.current;
       const catImage = catImageRef.current;
 
       if (heroTextSection && catImage) {
-        const heroTextBottom = heroTextSection.getBoundingClientRect().bottom;  //detect HeroText bottom position
+        const heroTextBottom = heroTextSection.getBoundingClientRect().bottom; //detect HeroText bottom position
 
-        if (heroTextBottom <= 0) { //detect current position
+        if (heroTextBottom <= 0) {
+          //detect current position
           setIsSticky(true); //if under HeroText div setSticky to tru
         } else {
           setIsSticky(false); //if at Herotext div setSticky to false
@@ -64,11 +66,11 @@ export default function page() {
               style={{ position: isSticky ? "fixed" : "absolute" }}
             >
               <button className="text-center">
-                <div className="text-wrap w-36 h-40 flex flex-col text-xl font-bold shadow p-6 bg-[#DAAF2C] absolute left-0">
-                  <h3 className="text-2xl font-bold text-black py-4">
+                <div className="text-wrap w-32 h-44 flex flex-col text-xl font-bold shadow p-6 bg-[#DAAF2C] rounded-r-3xl absolute left-0 border-2 border-black  ">
+                  <h3 className="text-2xl font-bold text-black py-7 pr-5">
                     <a
                       href="/donation"
-                      className="transition ease-in-out hover:text-white/80"
+                      className="transition ease-in-out flex justify-center hover:text-white/80"
                     >
                       DONATE HERE
                     </a>
@@ -79,7 +81,7 @@ export default function page() {
                     src="/images/cute donate cat.png"
                     width={140}
                     height={140}
-                    className="object-contain  left-20  top-[200px] mt-[4rem] z-10 md:fixed "
+                    className="object-contain  left-[4rem]  top-[200px] mt-[5rem] z-10 md:fixed "
                   />
                 </div>
               </button>
@@ -88,33 +90,42 @@ export default function page() {
             {/* <div className="flex flex-col justify-center items-center text-center mt-20 ">
               <HeadingAboutus text={"About Us"}></HeadingAboutus>
             </div> */}
-            <div className="absolute left-0">
+            {/* <div className="absolute left-0">
               <Image
                 src="/images/CAT PAW 1.png"
                 width={300}
                 height={300}
                 className="object-cover mb-1"
               />
-            </div>
+            </div> */}
             <div className="flex flex-col gap-20 justify-center items-center animate-fade-down">
-              <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
-                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#BD9468] border-0  absolute top mb-24">
+              <div className="flex flex-col justify-center items-center mt-14 h-auto ">
+                {/* <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#BD9468] border-0  absolute top mb-24">
                   <Heading text={"Introduction"}></Heading>
                 </div>
                 <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl  shadow p-20 px-6 bg-[#FFD9B0] border-2  mt-28">
                   The Abu Hurairah Club aims to give all homeless and abandoned
                   cats and kittens a chance of survival and new home
+                </p> */}{" "}
+                <h1 className="font-semibold text-[75.5px] text-[#866C5D] ">
+                  ABOUT US{" "}
+                </h1>
+                <p className="text-[34.93px] text-center text-[#6F6459]">
+                  The Abu Hurairah Club aims to give all homeless <br /> and
+                  abandoned cats and kittens a chance of <br /> survival and a
+                  new home.
                 </p>
               </div>
-              <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
-                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#BD9468] border-0  absolute top mb-40 ">
-                  <Heading text={"MISSION"}></Heading>
-                </div>
-                <p className=" text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl shadow p-20 px-6 bg-[#FFD9B0] border-2  mt-20">
-                  Our mission is to be the rescuer of the animals in IIUM by
-                  volunteering and guide other people to help animals in need.
-                  Showing mercy and share the love towards animals which is also
-                  the creations of Allah swt.
+
+              <div className="flex flex-col justify-center items-center w-[64rem]  h-auto">
+                <h1 className="text-[66.96px] font-light text-[#DAAF2C] flex justify-center">
+                  MISSION
+                </h1>
+                <p className=" w-auto text-center font-light leading-8 text-[24.28px] mx-5 rounded-3xl shadow p-5 px-20 bg-[#FFD878] border-2 drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] mt-14 tracking-widest">
+                  Our mission is to be the rescuer of the animals <br /> in IIUM
+                  by volunteering and guide other <br /> people to help animals
+                  in need. Showing mercy <br /> and share the love towards
+                  animals which is <br /> also the creations of Allah swt.
                 </p>
               </div>
             </div>
