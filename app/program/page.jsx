@@ -16,7 +16,7 @@ export default async function Page() {
   return (
     <section>
       <div className="text-center my-7">
-        <Heading text={'Programs'} />
+        <Heading text={'Programs & Activity'} />
       </div>
       <div className="lg:grid grid-cols-2 gap-4 gap-y-10 lg:mx-60 m-4">
         {client

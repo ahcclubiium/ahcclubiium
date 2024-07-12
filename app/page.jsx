@@ -97,20 +97,20 @@ export default function page() {
               />
             </div>
             <div className="flex flex-col gap-20 justify-center items-center animate-fade-down">
-              {/* <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
-                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#FD775D] border-2  absolute top mb-24">
+              <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
+                <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#BD9468] border-0  absolute top mb-24">
                   <Heading text={"Introduction"}></Heading>
                 </div>
-                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#ffe6e1] border-2  mt-28">
+                <p className="text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl  shadow p-20 px-6 bg-[#FFD9B0] border-2  mt-28">
                   The Abu Hurairah Club aims to give all homeless and abandoned
                   cats and kittens a chance of survival and new home
                 </p>
-              </div> */}
+              </div>
               <div className="flex flex-col justify-center items-center w-[64rem] h-auto">
                 <div className="text-wrap w-64 flex flex-col items-center justify-center text-xl font-bold mx-5 rounded-3xl shadow p-6 bg-[#BD9468] border-0  absolute top mb-40 ">
                   <Heading text={"MISSION"}></Heading>
                 </div>
-                <p className=" text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl border-1 shadow p-20 px-6 bg-[#FFD9B0] border-2  mt-20">
+                <p className=" text-wrap text-center leading-8 text-xl font-bold mx-5 rounded-3xl shadow p-20 px-6 bg-[#FFD9B0] border-2  mt-20">
                   Our mission is to be the rescuer of the animals in IIUM by
                   volunteering and guide other people to help animals in need.
                   Showing mercy and share the love towards animals which is also

@@ -13,14 +13,15 @@ export default function BlogPostCard({ id, title, thumbnail, desc }) {
 
   return (
     <div className={`${styles.card} hover:opacity-95`}>
-      <div className={`${styles.cardContainer} rounded-2xl shadow-xl mb-3`}>
-        <div className={`${styles.imageContainer} rounded-t-2xl`}>
+      <div className={`${styles.cardContainer} shadow-xl mb-3`}>
+        <div className={`${styles.imageContainer} `}>
           <img
             src={`https:${thumbnail}`}
             alt={title || "Blog post image"}
             className={`${styles.image} ${imageLoaded ? styles.imageLoaded : ""}`}
             onLoad={handleImageLoad}
           />
+          <p>`${title}</p>
         </div>
         <div className={`${styles.contentContainer} p-3 py-4`}>
           <h2 className="text-2xl text-sky-800 font-bold">{title}</h2>
