@@ -6,9 +6,10 @@ export default function HeroText() {
     <div className="overflow-hidden relative">
       <Image
         src="/images/herotextBg.png"
-        width={400}
-        height={400}
+        width={700}
+        height={700}
         className=" object-cover w-screen h-screen"
+        alt=""
       ></Image>
       <div className="absolute w-screen h-[93.2vh] inset-0 bg-black bg-opacity-[22%]">
         <div className="">
@@ -21,6 +22,7 @@ export default function HeroText() {
                   width={400}
                   height={400}
                   className="object-contain "
+                  alt=""
                 />
               </div>
               <div className=" text-white text-left  ">
@@ -43,6 +45,7 @@ export default function HeroText() {
                   width={400}
                   height={400}
                   className="object-contain mt-1 w-[24rem] h-16 "
+                  alt=""
                 />
               </div>
 
