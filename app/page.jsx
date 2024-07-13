@@ -65,7 +65,7 @@ export default function page() {
               }`}
               style={{ position: isSticky ? "fixed" : "absolute" }}
             >
-              <button className="text-center">
+              {/* <button className="text-center">
                 <div className="text-wrap w-32 h-44 flex flex-col text-xl font-bold shadow p-6 bg-[#DAAF2C] rounded-r-3xl absolute left-0 border-2 border-black  ">
                   <h3 className="text-2xl font-bold text-black py-7 pr-5">
                     <a
@@ -84,7 +84,7 @@ export default function page() {
                     className="object-contain  left-[4rem]  top-[200px] mt-[5rem] z-10 md:fixed "
                   />
                 </div>
-              </button>
+              </button> */}
             </div>
 
             {/* <div className="flex flex-col justify-center items-center text-center mt-20 ">
@@ -135,109 +135,140 @@ export default function page() {
         {/* Stories */}
         <section>
           <div>
-            <div className="flex flex-col justify-center items-center text-center mt-20">
-              <HeadingAboutus text={"Activities"}></HeadingAboutus>
+            {/* first story */}
+            <div className="flex flex-row bg-[#958C81] w-[75rem]  h-[36rem] rounded-r-[3.5rem]">
+              <div className="m-12">
+                <Image
+                  src="/images/story2.png"
+                  width={400}
+                  height={400}
+                  className="object-contain absolute z-0  "
+                />
+                <Image
+                  src="/images/story1.png"
+                  width={400}
+                  height={400}
+                  className="object-contain absolute z-10 mt-[13rem] ml-20  "
+                />
+              </div>
+              <div className="flex flex-col">
+                {/* the logo */}
+                <div className="flex flex-row items-center">
+                  <div className="ml-[27rem] bg-[#FFD878] rounded-[2rem] mt-12 flex flex-row">
+                    <Image
+                      src="/images/volunteer1.png"
+                      width={120}
+                      height={120}
+                      className="object-contain   "
+                    />
+                  </div>
+                  <p className="ml-7 mt-[3rem] text-[29.36px] font-bold ">
+                    AWARENESS AND <br /> VOLUNTERISM
+                  </p>
+                </div>
+                <p className="ml-[30rem] mt-5 w-[35rem] text-[21.21px]">
+                  Raising awareness about feline issues is a key part of the Cat
+                  Club's mission. The club organizes educational programs to
+                  inform the public about responsible cat ownership, the
+                  benefits of spaying and neutering, and the dangers of
+                  declawing. Through workshops and social media, the club shares
+                  knowledge about common health and behavioral issues, providing
+                  resources to help cat owners offer the best care possible.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-row items-center m-40 gap-1 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
-              <Image
-                src="/images/ahcstory1.png"
-                width={400}
-                height={400}
-                className="mx-20 w-[450px] h-[400px] object-contain"
-              ></Image>
-              <p className="text-xl text-black p-10">
-                Dedicated to protecting the rights and well-being of cats.
-                Members work to ensure cats receive proper care and respect,
-                promoting ethical standards among cat owners, breeders, and
-                shelters. Through campaigns and community engagement, the club
-                aims to create a safe and happy world for all cats.
-              </p>
+            {/* second story */}
+            <div>
+              <div className="flex flex-row bg-[#F6E6B4]  h-[36rem] rounded-l-[3.5rem] justify-end">
+                <div className="m-12">
+                  <Image
+                    src="/images/story2.png"
+                    width={400}
+                    height={400}
+                    className="object-contain absolute z-0  "
+                  />
+                  <Image
+                    src="/images/story1.png"
+                    width={400}
+                    height={400}
+                    className="object-contain absolute z-10 mt-[13rem] ml-20  "
+                  />
+                </div>
+                <div className="flex flex-col">
+                  {/* the logo */}
+                  <div className="flex flex-row items-center">
+                    <div className="ml-[27rem] bg-[#FFD878] rounded-[2rem] mt-12 flex flex-row">
+                      <Image
+                        src="/images/volunteer1.png"
+                        width={120}
+                        height={120}
+                        className="object-contain   "
+                      />
+                    </div>
+                    <p className="ml-7 mt-[3rem] text-[29.36px] font-bold ">
+                      AWARENESS AND <br /> VOLUNTERISM
+                    </p>
+                  </div>
+                  <p className="ml-[30rem] mt-5 w-[35rem] text-[21.21px]">
+                    Raising awareness about feline issues is a key part of the
+                    Cat Club's mission. The club organizes educational programs
+                    to inform the public about responsible cat ownership, the
+                    benefits of spaying and neutering, and the dangers of
+                    declawing. Through workshops and social media, the club
+                    shares knowledge about common health and behavioral issues,
+                    providing resources to help cat owners offer the best care
+                    possible.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-row items-center m-48 gap-24 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
-              <p className="text-xl text-black p-10">
-                Operates a network of foster homes and works with local shelters
-                to find permanent homes for rescued cats. Through adoption fairs
-                and online platforms, the Cat Club connects cats in need with
-                caring families, ensuring each cat finds a loving home.
-              </p>
-              <Image
-                src="/images/ahcstory2.png"
-                width={400}
-                height={400}
-                className=" w-[450px] h-[400px] object-contain"
-              ></Image>
-            </div>
-            <div className="flex flex-row items-center m-48 gap-10 md:lg:grid md:lg:grid-cols-2 sm:grid-cols-2 ">
-              <Image
-                src="/images/image-3.png"
-                width={400}
-                height={400}
-                className="mx-20 w-[400] h-[400px] object-contain"
-              ></Image>
-              <p className="text-xl text-black p-10">
-                Raising awareness about feline issues is a key part of the Cat
-                Club's mission. The club organizes educational programs to
-                inform the public about responsible cat ownership, the benefits
-                of spaying and neutering, and the dangers of declawing. Through
-                workshops and social media, the club shares knowledge about
-                common health and behavioral issues, providing resources to help
-                cat owners offer the best care possible.
-              </p>
+            {/* third story */}
+            <div className="flex flex-row bg-[#958C81] w-[75rem]  h-[36rem] rounded-r-[3.5rem]">
+              <div className="m-12">
+                <Image
+                  src="/images/story2.png"
+                  width={400}
+                  height={400}
+                  className="object-contain absolute z-0  "
+                />
+                <Image
+                  src="/images/story1.png"
+                  width={400}
+                  height={400}
+                  className="object-contain absolute z-10 mt-[13rem] ml-20  "
+                />
+              </div>
+              <div className="flex flex-col">
+                {/* the logo */}
+                <div className="flex flex-row items-center">
+                  <div className="ml-[27rem] bg-[#FFD878] rounded-[2rem] mt-12 flex flex-row">
+                    <Image
+                      src="/images/volunteer1.png"
+                      width={120}
+                      height={120}
+                      className="object-contain   "
+                    />
+                  </div>
+                  <p className="ml-7 mt-[3rem] text-[29.36px] font-bold ">
+                    AWARENESS AND <br /> VOLUNTERISM
+                  </p>
+                </div>
+                <p className="ml-[30rem] mt-5 w-[35rem] text-[21.21px]">
+                  Raising awareness about feline issues is a key part of the Cat
+                  Club's mission. The club organizes educational programs to
+                  inform the public about responsible cat ownership, the
+                  benefits of spaying and neutering, and the dangers of
+                  declawing. Through workshops and social media, the club shares
+                  knowledge about common health and behavioral issues, providing
+                  resources to help cat owners offer the best care possible.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* activitites */}
-        <section className="my-20 flex justify-center w-screen h-screen bg-red-300">
-          <div className="flex flex-col justify-center items-center text-center">
-            <Heading text={""}></Heading>
-            <div className=" md:lg:grid md:lg:grid-cols-3 sm:grid-cols-2 gap-10 m-10">
-              {/* change cols number here */}
-              <ActivityCard
-                activityDesc={"Saving Cats with Care and Compassion"}
-                activityImage={
-                  <Image
-                    src="/images/rescue.png"
-                    width={150}
-                    height={150}
-                    className=""
-                  ></Image>
-                }
-                activityTitle={"Cat Rescue"}
-              ></ActivityCard>
-              <ActivityCard
-                activityDesc={
-                  "Educating IIUM community about responsible pet ownership and animal welfare with volunteers."
-                }
-                activityImage={
-                  <div className="">
-                    <Image
-                      src="/images/volunteer1.png"
-                      width={150}
-                      height={150}
-                      className=""
-                    ></Image>
-                  </div>
-                }
-                activityTitle={"Awareness and Volunterism"}
-              ></ActivityCard>
-              <ActivityCard
-                activityDesc={
-                  "Bringing new life to cats through open adoption initiatives."
-                }
-                activityImage={
-                  <Image
-                    src="/images/catAdoption.png"
-                    width={150}
-                    height={150}
-                    className=""
-                  ></Image>
-                }
-                activityTitle={"Cat Adoption"}
-              ></ActivityCard>
-            </div>
-          </div>
-        </section>
+        {/* thee card, adoption, awareness... */}
+        <section className="my-20 flex justify-center w-screen h-screen "></section>
 
         {/* program */}
         <section>
