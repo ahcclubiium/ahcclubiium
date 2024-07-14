@@ -19,7 +19,7 @@ export default function Header() {
       className="
         sticky left-0 top-0 w-full 
         bg-[#B89670] p-1 px-10 flex 
-        font-bold text-white z-10"
+        font-bold text-white z-30"
     >
       {/* <LogoImage /> */}
       <div className="flex w-full justify-center gap-4 lg:gap-14 items-center">

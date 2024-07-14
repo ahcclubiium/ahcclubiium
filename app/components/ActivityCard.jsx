@@ -1,15 +1,28 @@
-export default function ActivityCard({ activityImage, activityTitle, activityDesc }) {
+export default function ActivityCard({
+  activityImage,
+  activityImage2,
+  Symbol,
+  activityTitle,
+  activityDesc,
+}) {
   return (
-    <div className="flex flex-col items-center justify-center w-72 p-5 px-8 bg-[#FD775D] rounded-3xl border-2 border-black">
-      <div className="text-6xl p-10">
+    <div className="flex flex-row bg-[#958C81] w-[75rem]  h-[36rem] rounded-r-[3.5rem]">
+      <div className="m-12">
         {activityImage}
+        {activityImage2}
       </div>
-      <h3 className="text-xl font-bold">
-        {activityTitle}
-      </h3>
-      <p className="text-sm p-5">
-        {activityDesc}
-      </p>  
+      <div className="flex flex-col">
+        {/* the logo and title */}
+        <div className="flex flex-row items-center  ml-[30rem] w-fit h-[6rem]">
+          <div className=" ">{Symbol}</div>
+          <div className="ml-[9rem] mt-[6rem] text-[29.36px] font-bold w-[17rem] ">
+            {activityTitle}
+          </div>
+        </div>
+        <div className="ml-[32rem] mt-20 w-[29rem] text-[21.21px] tracking-wide">
+          {activityDesc}
+        </div>
+      </div>
     </div>
   );
 }
