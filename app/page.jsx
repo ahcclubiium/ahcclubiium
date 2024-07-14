@@ -127,7 +127,7 @@ export default function page() {
 
         {/* Stories */}
         <section>
-          <div className="">
+          <div className="mt-20">
             {/* first story */}
             <div className="z-0 absolute">
               <ActivityCard
@@ -137,6 +137,7 @@ export default function page() {
                     width={400}
                     height={400}
                     className="object-contain absolute z-0  "
+                    alt=""
                   />
                 }
                 activityImage2={
@@ -145,6 +146,8 @@ export default function page() {
                     width={400}
                     height={400}
                     className="object-contain absolute z-0 mt-[13rem] ml-20 "
+                    alt=""
+
                   />
                 }
                 Symbol={
@@ -153,6 +156,8 @@ export default function page() {
                     width={120}
                     height={120}
                     className="object-contain absolute bg-[#FFD878] rounded-[2rem] "
+                    alt=""
+
                   />
                 }
                 activityTitle="AWARENESS AND VOLUNTERISM"
@@ -182,6 +187,8 @@ export default function page() {
                         width={120}
                         height={120}
                         className="object-contain   "
+                        alt=""
+
                       />
                     </div>
                     <p className=" mt-[3rem] ml-7 text-[29.36px] font-bold ">
@@ -202,12 +209,15 @@ export default function page() {
                     width={400}
                     height={400}
                     className="object-contain absolute z-0  "
+                    alt=""
                   />
                   <Image
                     src="/images/catrescue2.png"
                     width={250}
                     height={250}
                     className="object-contain absolute  mt-[11rem] ml-28  "
+                    alt=""
+                    
                   />
                 </div>
               </div>
@@ -221,6 +231,7 @@ export default function page() {
                     width={300}
                     height={300}
                     className="object-contain absolute z-0 ml-[6rem] "
+                    alt=""
                   />
                 }
                 activityImage2={
@@ -229,6 +240,8 @@ export default function page() {
                     width={300}
                     height={300}
                     className="object-contain absolute z-0 mt-[14rem] ml-[1rem] "
+                    alt=""
+
                   />
                 }
                 Symbol={
@@ -237,6 +250,7 @@ export default function page() {
                     width={120}
                     height={120}
                     className="object-contain absolute bg-[#FFD878] rounded-[2rem] "
+                    alt=""
                   />
                 }
                 activityTitle="CAT ADOPTION"
@@ -269,6 +283,7 @@ export default function page() {
                 width={300}
                 height={300}
                 className="object-cover"
+                alt=""
               />
             </div>
             <div className="flex flex-row justify-center items-center">
@@ -287,6 +302,7 @@ export default function page() {
                       text="Read More"
                       link="https://www.google.com"
                       className="relative z-10"
+                      alt=""
                     ></PrettyButton>
                   </div>
                 </div>
@@ -297,6 +313,7 @@ export default function page() {
                   width={600}
                   height={600}
                   className="object-contain"
+                  alt=""
                 ></Image>
               </div>
             </div>
