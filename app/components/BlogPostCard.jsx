@@ -12,6 +12,7 @@ export default function BlogPostCard({ id, title, thumbnail, desc }) {
           src={imageUrl}
           height={1100}
           width={1500}
+          // layout="responsive"
           alt={title || "Blog post image"}
           className="rounded-t-2xl"
         />

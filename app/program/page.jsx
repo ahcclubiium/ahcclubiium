@@ -3,8 +3,6 @@ import BlogPostCard from '../components/BlogPostCard';
 import Heading from '../components/Heading';
 import { createClient } from 'contentful'; 
 
-// const CONTENTFUL_SPACE_ID = process.env.REACT_APP_CONTENTFUL_SPACE_ID;
-// const CONTENTFUL_ACCESS_TOKEN = process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN;
 export default async function Page() {
    // DON'T TOUCH THIS PART
   const client = await createClient({
@@ -16,7 +14,7 @@ export default async function Page() {
   return (
     <section>
       <div className="text-center my-7">
-        <Heading text={'Programs & Activity'} />
+        <Heading text={'Programs'} />
       </div>
       <div className="lg:grid grid-cols-2 gap-4 gap-y-10 lg:mx-60 m-4">
         {client
@@ -25,9 +23,10 @@ export default async function Page() {
             entries.items.map((entry) => (
           <BlogPostCard
             key={entry.sys.id}
-            title={entry.fields.title}
+            title={entry.fields.tltle}
             thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
             desc={entry.fields.description}
+            slug={entry.fields.slug}
           />
         )))}
       </div>

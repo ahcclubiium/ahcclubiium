@@ -14,7 +14,7 @@ export default async function News({ params }) {
   try {
     const entry = await client.getEntry(params.slug);
     const document = entry.fields.content;
-    const imageUrl = `https:${entry.fields.image.fields.file.url}`; // Prepend with "https:"
+    const imageUrl = `https:${entry.fields.thumbnail.fields.file.url}`; // Prepend with "https:"
     console.log("Image URL:", imageUrl); // Console log imageUrl
     const date = entry.fields.date;
 

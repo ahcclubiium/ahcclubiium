@@ -15,6 +15,7 @@ export default function Organization() {
           width={400}
           height={400}
           className="mx-20 w-max h-[400px] object-contain mb-48"
+          alt=""
         ></Image>
       </div>
     );
