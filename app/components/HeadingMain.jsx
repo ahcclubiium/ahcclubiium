@@ -3,7 +3,7 @@ export default function HeadingMain({ text, lightFont }) {
   return (
     <h2
       className={
-        "text-5xl text-[#8B2813] font-extrabold text-center" + isLightFont
+        "text-5xl text-[#866C5D] font-extrabold text-center" + isLightFont
       }
     >
       {text}
