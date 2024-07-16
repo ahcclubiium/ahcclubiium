@@ -13,11 +13,12 @@ export default function BlogPostCard({ id, title, thumbnail, desc }) {
           height={1100}
           width={1500}
           // layout="responsive"
+          // priority  //to resolve LCP warning
           alt={title || "Blog post image"}
           className="rounded-t-2xl"
+          
         />
-      </div>
-      <div className="bg-white hover:opacity-95 rounded-b-2xl shadow-xl mb-3">
+         <div className="bg-white hover:opacity-95 rounded-b-2xl shadow-xl mb-3">
         <div className="p-3 py-4">
           <h2 className="text-2xl text-red-800 font-bold">{title || "No title"}</h2>
           <p className="text-gray-500 text-justify">{desc || "No description"}</p>
@@ -29,6 +30,8 @@ export default function BlogPostCard({ id, title, thumbnail, desc }) {
           </div>
         </div>
       </div>
+      </div>
+     
     </a>
   );
 }

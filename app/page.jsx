@@ -60,12 +60,12 @@ export default function page() {
           <div className="lg:px-64">
             <div
               ref={catImageRef} //to manipulate the DOM
-              className={`fixed left-0 top-[200px] mt-[3rem] z-30 ${
+              className={`fixed left-0 top-[200px] mt-[3rem] z-10 ${
                 isSticky ? "block" : "hidden"
               }`}
               style={{ position: isSticky ? "fixed" : "absolute" }}
             >
-              <button className="text-center ">
+              {/* <button className="text-center">
                 <div className="text-wrap w-32 h-44 flex flex-col text-xl font-bold shadow p-6 bg-[#DAAF2C] rounded-r-3xl absolute left-0 border-2 border-black  ">
                   <h3 className="text-2xl font-bold text-black py-7 pr-5">
                     <a
@@ -84,7 +84,7 @@ export default function page() {
                     className="object-contain  left-[4rem]  top-[200px] mt-[5rem] z-10 md:fixed "
                   />
                 </div>
-              </button>
+              </button> */}
             </div>
 
             {/* <div className="flex flex-col justify-center items-center text-center mt-20 ">
@@ -127,7 +127,7 @@ export default function page() {
 
         {/* Stories */}
         <section>
-          <div className="mt-24">
+          <div className="mt-20">
             {/* first story */}
             <div className="z-0 absolute">
               <ActivityCard
@@ -147,6 +147,7 @@ export default function page() {
                     height={400}
                     className="object-contain absolute z-0 mt-[13rem] ml-20 "
                     alt=""
+
                   />
                 }
                 Symbol={
@@ -154,8 +155,9 @@ export default function page() {
                     src="/images/volunteer1.png"
                     width={120}
                     height={120}
-                    className="drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] object-contain absolute bg-[#FFD878] rounded-[2rem] "
+                    className="object-contain absolute bg-[#FFD878] rounded-[2rem] "
                     alt=""
+
                   />
                 }
                 activityTitle="AWARENESS AND VOLUNTERISM"
@@ -179,13 +181,14 @@ export default function page() {
                 <div className="flex flex-col ml-[8rem]">
                   {/* the logo */}
                   <div className="flex flex-row items-center ">
-                    <div className=" bg-[#FFD878] rounded-[2rem] mt-12 flex flex-row drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)]">
+                    <div className=" bg-[#FFD878] rounded-[2rem] mt-12 flex flex-row">
                       <Image
                         src="/images/rescue.png"
                         width={120}
                         height={120}
                         className="object-contain   "
                         alt=""
+
                       />
                     </div>
                     <p className=" mt-[3rem] ml-7 text-[29.36px] font-bold ">
@@ -214,12 +217,13 @@ export default function page() {
                     height={250}
                     className="object-contain absolute  mt-[11rem] ml-28  "
                     alt=""
+                    
                   />
                 </div>
               </div>
             </div>
             {/* third story */}
-            <div className="z-10 absolute mt-[65rem]">
+            <div className="z-20 absolute mt-[65rem]">
               <ActivityCard
                 activityImage={
                   <Image
@@ -237,6 +241,7 @@ export default function page() {
                     height={300}
                     className="object-contain absolute z-0 mt-[14rem] ml-[1rem] "
                     alt=""
+
                   />
                 }
                 Symbol={
@@ -244,7 +249,7 @@ export default function page() {
                     src="/images/catAdoption.png"
                     width={120}
                     height={120}
-                    className="drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] object-contain absolute bg-[#FFD878] rounded-[2rem] "
+                    className="object-contain absolute bg-[#FFD878] rounded-[2rem] "
                     alt=""
                   />
                 }
@@ -263,10 +268,16 @@ export default function page() {
           </div>
         </section>
 
+        {/* thee card, adoption, awareness... */}
+        <section className="my-20 flex justify-center w-screen h-screen "></section>
+
         {/* program */}
         <section>
-          <div className="my-50 px-40 mt-[120rem]">
-            {/* <div className="absolute left-0 mt-60">
+          <div className="my-50 px-40 mt-[67rem]">
+            <div className="flex flex-col justify-center items-center text-center p-10 m-20">
+              <HeadingAboutus text={"Program"}></HeadingAboutus>
+            </div>
+            <div className="absolute left-0 mt-60">
               <Image
                 src="/images/CAT PAW 1.png"
                 width={300}
@@ -274,7 +285,7 @@ export default function page() {
                 className="object-cover"
                 alt=""
               />
-            </div> */}
+            </div>
             <div className="flex flex-row justify-center items-center">
               <div className="transform translate-x-32">
                 <div className="w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
@@ -299,8 +310,8 @@ export default function page() {
               <div className="pl-20">
                 <Image
                   src="/images/ahcprogram 3.png"
-                  width={750}
-                  height={750}
+                  width={600}
+                  height={600}
                   className="object-contain"
                   alt=""
                 ></Image>

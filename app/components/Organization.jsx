@@ -15,8 +15,8 @@ export default function Organization() {
 
         <Image
           src="/images/OrganizationChart.png"
-          width={400}
-          height={400}
+          width={1400}
+          height={1400}
           className="mx-20 w-screen h-[400px] object-contain mb-48"
           alt=""
         ></Image>

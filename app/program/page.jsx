@@ -13,16 +13,16 @@ export default async function Page() {
   
   return (
     <section>
-      <div className="text-center my-7">
+      {/* <div className="text-center my-7">
         <Heading text={'Programs'} />
-      </div>
+      </div> */}
       <div className="lg:grid grid-cols-2 gap-4 gap-y-10 lg:mx-60 m-4">
         {client
           .getEntries({ content_type: "program" })
           .then((entries) =>
             entries.items.map((entry) => (
           <BlogPostCard
-            key={entry.sys.id}
+            key={entry.fields.id}
             title={entry.fields.tltle}
             thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
             desc={entry.fields.description}
