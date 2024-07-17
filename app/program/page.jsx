@@ -23,9 +23,9 @@ export default async function Page() {
             entries.items.map((entry) => (
           <BlogPostCard
             key={entry.fields.id}
-            title={entry.fields.tltle}
+            title={entry.fields.title}
             thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
-            desc={entry.fields.description}
+            desc={entry.fields.desc}
             slug={entry.fields.slug}
           />
         )))}

@@ -16,7 +16,6 @@ export default function BlogPostCard({ id, title, thumbnail, desc }) {
           // priority  //to resolve LCP warning
           alt={title || "Blog post image"}
           className="rounded-t-2xl"
-          
         />
          <div className="bg-white hover:opacity-95 rounded-b-2xl shadow-xl mb-3">
         <div className="p-3 py-4">
