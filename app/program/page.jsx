@@ -2,6 +2,7 @@
 import BlogPostCard from '../components/BlogPostCard';
 import Heading from '../components/Heading';
 import { createClient } from 'contentful'; 
+import Image from "next/image";
 
 export default async function Page() {
    // DON'T TOUCH THIS PART
@@ -16,9 +17,15 @@ export default async function Page() {
       {/* <div className="text-center my-7">
         <Heading text={'Programs'} />
       </div> */}
-      <div className="lg:grid grid-cols-2 gap-4 gap-y-10 lg:mx-60 m-4">
+      <Image
+                src="/images/CAT PAW 1.png"
+                width={300}
+                height={300}
+                className="object-cover mb-1 z-[-1] absolute inset-0"
+              />
+      <div className="grid-cols-1 sm:grid-cols-4 lg:grid grid-cols-3 gap-4 gap-y-10 lg:mx-60 m-4">
         {client
-          .getEntries({ content_type: "program" })
+          .getEntries({ content_type: "program"})
           .then((entries) =>
             entries.items.map((entry) => (
           <BlogPostCard

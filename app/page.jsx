@@ -8,96 +8,31 @@ import Organization from "./components/Organization";
 import HeroText from "./components/HeroText";
 import HeadingAboutus from "./components/HeadingMain";
 import PrettyButton from "./components/PrettyButton";
-import { useRef, useEffect, useState } from "react";
+import {createClient} from "contentful";
+import LatestProgram from "./components/LatestProgram";
 
-export default function page() {
-  const heroTextSectionRef = useRef(null);
-  const catImageRef = useRef(null);
-  const [isSticky, setIsSticky] = useState(false);
+export default async function page() {
 
-  useEffect(() => {
-    const handleScroll = () => {
-      //determine heroText position
-      const heroTextSection = heroTextSectionRef.current;
-      const catImage = catImageRef.current;
-
-      if (heroTextSection && catImage) {
-        const heroTextBottom = heroTextSection.getBoundingClientRect().bottom; //detect HeroText bottom position
-
-        if (heroTextBottom <= 0) {
-          //detect current position
-          setIsSticky(true); //if under HeroText div setSticky to tru
-        } else {
-          setIsSticky(false); //if at Herotext div setSticky to false
-        }
-      }
-    };
-
-    // Attach scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Initial check pf initial position heroText
-    handleScroll();
-
-    // Clean up event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll); //prevent memory leaks
-    };
-  }, []); // Empty dependency array ensures the effect runs only once
+  const client = await createClient({
+    space : process.env.CONTENTFUL_SPACE_ID,
+    environment : 'master',
+    accessToken : process.env.CONTENTFUL_ACCESS_TOKEN,
+  })
   return (
     <section>
       <main>
-        <section
-          id="heroText"
-          ref={heroTextSectionRef}
-          className="h-screen flex justify-center items-center "
-        >
-          <HeroText></HeroText>
-        </section>
-
+        {/* heroText */}
+      <HeroText></HeroText>
         {/* intro and mission  */}
         <section className="py-12">
-          <div className="lg:px-64">
-            <div
-              ref={catImageRef} //to manipulate the DOM
-              className={`fixed left-0 top-[200px] mt-[3rem] z-10 ${
-                isSticky ? "block" : "hidden"
-              }`}
-              style={{ position: isSticky ? "fixed" : "absolute" }}
-            >
-              {/* <button className="text-center">
-                <div className="text-wrap w-32 h-44 flex flex-col text-xl font-bold shadow p-6 bg-[#DAAF2C] rounded-r-3xl absolute left-0 border-2 border-black  ">
-                  <h3 className="text-2xl font-bold text-black py-7 pr-5">
-                    <a
-                      href="/donation"
-                      className="transition ease-in-out flex justify-center hover:text-white/80"
-                    >
-                      DONATE HERE
-                    </a>
-                  </h3>
-                </div>
-                <div className="ml-4">
-                  <Image
-                    src="/images/cute donate cat.png"
-                    width={140}
-                    height={140}
-                    className="object-contain  left-[4rem]  top-[200px] mt-[5rem] z-10 md:fixed "
-                  />
-                </div>
-              </button> */}
-            </div>
-
-            {/* <div className="flex flex-col justify-center items-center text-center mt-20 ">
-              <HeadingAboutus text={"About Us"}></HeadingAboutus>
-            </div> */}
-            {/* <div className="absolute left-0">
+            <div className="absolute left-0">
               <Image
                 src="/images/CAT PAW 1.png"
                 width={300}
                 height={300}
                 className="object-cover mb-1"
               />
-            </div> */}
+            </div> 
             <div className="flex flex-col gap-20 justify-center items-center animate-fade-down">
               <div className="flex flex-col justify-center items-center mt-14 h-auto ">
                 <h1 className="font-semibold text-[75.5px] text-[#866C5D] ">
@@ -122,7 +57,6 @@ export default function page() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Stories */}
@@ -275,7 +209,7 @@ export default function page() {
         <section>
           <div className="my-50 px-40 mt-[67rem]">
             <div className="flex flex-col justify-center items-center text-center p-10 m-20">
-              <HeadingAboutus text={"Program"}></HeadingAboutus>
+              <HeadingAboutus text={"PROGRAM"}></HeadingAboutus>
             </div>
             <div className="absolute left-0 mt-60">
               <Image
@@ -286,6 +220,8 @@ export default function page() {
                 alt=""
               />
             </div>
+
+            {/* LatestProgram */}
             <div className="flex flex-row justify-center items-center">
               <div className="transform translate-x-32">
                 <div className="w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
@@ -300,7 +236,7 @@ export default function page() {
                   <div className="p-10">
                     <PrettyButton
                       text="Read More"
-                      link="https://www.google.com"
+                      link="/program"
                       className="relative z-10"
                       alt=""
                     ></PrettyButton>
@@ -308,13 +244,21 @@ export default function page() {
                 </div>
               </div>
               <div className="pl-20">
-                <Image
-                  src="/images/ahcprogram 3.png"
-                  width={600}
-                  height={600}
-                  className="object-contain"
-                  alt=""
-                ></Image>
+              {client
+                  .getEntries({ 
+                    content_type: "program",
+                    limit: 1 //auto get the latest publish content
+                  })
+                  .then((entries) =>
+                    entries.items.map((entry) => (
+                  <LatestProgram
+                    key={entry.fields.id}
+                    title={entry.fields.title}
+                    thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
+                    desc={entry.fields.desc}
+                    slug={entry.fields.slug}
+                  />
+                )))}
               </div>
             </div>
           </div>
