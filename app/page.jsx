@@ -1,5 +1,4 @@
 //main page
-"use client";
 
 import Heading from "./components/Heading";
 import ActivityCard from "./components/ActivityCard";
