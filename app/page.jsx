@@ -21,41 +21,40 @@ export default async function page() {
     <section>
       <main>
         {/* heroText */}
-      <HeroText></HeroText>
+        <HeroText></HeroText>
         {/* intro and mission  */}
         <section className="py-12">
-            <div className="absolute left-0">
-              <Image
-                src="/images/CAT PAW 1.png"
-                width={300}
-                height={300}
-                className="object-cover mb-1"
-              />
-            </div> 
-            <div className="flex flex-col gap-20 justify-center items-center animate-fade-down">
-              <div className="flex flex-col justify-center items-center mt-14 h-auto ">
-                <h1 className="font-semibold text-[75.5px] text-[#866C5D] ">
-                  ABOUT US{" "}
-                </h1>
-                <p className="text-[34.93px] text-center text-[#6F6459]">
-                  The Abu Hurairah Club aims to give all homeless <br /> and
-                  abandoned cats and kittens a chance of <br /> survival and a
-                  new home.
-                </p>
-              </div>
-
-              <div className="flex flex-col justify-center items-center w-[64rem]  h-auto">
-                <h1 className="text-[66.96px] font-light text-[#DAAF2C] flex justify-center">
-                  MISSION
-                </h1>
-                <p className=" w-auto text-center font-light leading-8 text-[24.28px] mx-5 rounded-3xl shadow p-5 px-20 bg-[#FFD878] border-2 drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] mt-14 tracking-widest">
-                  Our mission is to be the rescuer of the animals <br /> in IIUM
-                  by volunteering and guide other <br /> people to help animals
-                  in need. Showing mercy <br /> and share the love towards
-                  animals which is <br /> also the creations of Allah swt.
-                </p>
-              </div>
+          <div className="absolute left-0">
+            <Image
+              src="/images/CAT PAW 1.png"
+              width={300}
+              height={300}
+              className="object-cover mb-1"
+            />
+          </div>
+          <div className="flex flex-col gap-20 justify-center items-center animate-fade-down">
+            <div className="flex flex-col justify-center items-center mt-14 h-auto ">
+              <h1 className="font-semibold text-[64.12px] text-[#866C5D] ">
+                ABOUT US{" "}
+              </h1>
+              <p className="text-[22.51px] text-center text-[#6F6459]">
+                The Abu Hurairah Club aims to give all homeless and abandoned{" "}
+                <br /> cats and kittens a chance of survival and a new home.
+              </p>
             </div>
+
+            <div className="flex flex-col justify-center items-center w-[64rem]  h-auto">
+              <h1 className="text-[39.77px] font-light text-[#DAAF2C] flex justify-center">
+                MISSION
+              </h1>
+              <p className=" w-auto text-center font-light leading-8 text-[18.66px] mx-5 rounded-3xl shadow p-5 px-20 bg-[#FFD878] border-2 drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] mt-14 tracking-widest">
+                Our mission is to be the rescuer of the animals <br /> in IIUM
+                by volunteering and guide other <br /> people to help animals in
+                need. Showing mercy <br /> and share the love towards animals
+                which is <br /> also the creations of Allah swt.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Stories */}
@@ -80,7 +79,6 @@ export default async function page() {
                     height={400}
                     className="object-contain absolute z-0 mt-[13rem] ml-20 "
                     alt=""
-
                   />
                 }
                 Symbol={
@@ -90,7 +88,6 @@ export default async function page() {
                     height={120}
                     className="object-contain absolute bg-[#FFD878] rounded-[2rem] "
                     alt=""
-
                   />
                 }
                 activityTitle="AWARENESS AND VOLUNTERISM"
@@ -121,7 +118,6 @@ export default async function page() {
                         height={120}
                         className="object-contain   "
                         alt=""
-
                       />
                     </div>
                     <p className=" mt-[3rem] ml-7 text-[29.36px] font-bold ">
@@ -150,7 +146,6 @@ export default async function page() {
                     height={250}
                     className="object-contain absolute  mt-[11rem] ml-28  "
                     alt=""
-                    
                   />
                 </div>
               </div>
@@ -174,7 +169,6 @@ export default async function page() {
                     height={300}
                     className="object-contain absolute z-0 mt-[14rem] ml-[1rem] "
                     alt=""
-
                   />
                 }
                 Symbol={
@@ -243,21 +237,24 @@ export default async function page() {
                 </div>
               </div>
               <div className="pl-20">
-              {client
-                  .getEntries({ 
+                {client
+                  .getEntries({
                     content_type: "program",
-                    limit: 1 //auto get the latest publish content
+                    limit: 1, //auto get the latest publish content
                   })
                   .then((entries) =>
                     entries.items.map((entry) => (
-                  <LatestProgram
-                    key={entry.fields.id}
-                    title={entry.fields.title}
-                    thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
-                    desc={entry.fields.desc}
-                    slug={entry.fields.slug}
-                  />
-                )))}
+                      <LatestProgram
+                        key={entry.fields.id}
+                        title={entry.fields.title}
+                        thumbnail={
+                          entry.fields.thumbnail?.fields?.file?.url || ""
+                        }
+                        desc={entry.fields.desc}
+                        slug={entry.fields.slug}
+                      />
+                    ))
+                  )}
               </div>
             </div>
           </div>
