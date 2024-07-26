@@ -13,8 +13,8 @@ export default function BlogPostCard({ id, title, thumbnail, desc }) {
           src={imageUrl}
           height={700}
           width={700}
-          // layout="responsive"
-          // priority  //to resolve LCP warning
+          layout="responsive"
+          priority  //to resolve LCP warning
           alt={title || "Blog post image"}
           className="rounded-t-2xl object-cover "
         />

@@ -24,27 +24,29 @@ export default async function Page() {
         className="object-cover mb-1 z-[-10] absolute right-40  top-0"
         alt = "abu hurairah club iium"
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20 max-w-5xl mx-auto m-2">
-        {client
-          .getEntries({ content_type: "program"})
-          .then((entries) =>
-            entries.items.map((entry, index) => (
-              <div
-              key={entry.fields.id}
-              className={`p-4 border rounded-lg shadow-lg ${
-                index % 2 === 1 ? 'mt-20' : ''
-              }`}
-            >{/*instead we wrap the blogpostcard in div*/}
-                <BlogPostCard
-                  title={entry.fields.title}
-                  thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
-                  desc={entry.fields.desc}
-                  slug={entry.fields.slug}
-                />
-              </div>
-            ))
-          )}
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20 max-w-5xl mx-auto m-2">
+  {client
+    .getEntries({ content_type: "program" })
+    .then((entries) =>
+      entries.items.map((entry, index) => (
+        <div
+          key={entry.fields.id}
+          className={`p-4 border rounded-lg shadow-lg ${
+            index % 2 === 0 ? 'h-custom-1 mt-0' : 'h-custom-2 mt-60'
+          }`}
+        >
+          <BlogPostCard
+            title={entry.fields.title}
+            thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
+            desc={entry.fields.desc}
+            slug={entry.fields.slug}
+          />
+        </div>
+      ))
+    )}
+</div>
+
+
     </section>
   );
 }

@@ -12,9 +12,20 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
+      height:{
+        'custom-1':'650px',
+        'custom-2':'650px',
+      },
+      margin:{
+        '20':'5rem',
+      },
+
     },
   },
   plugins: [
     require("tailwindcss-animated")
   ],
+
+  
+  
 };
