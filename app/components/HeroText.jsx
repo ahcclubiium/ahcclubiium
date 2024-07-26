@@ -52,7 +52,7 @@ export default function HeroText() {
               <div className="mt-[0.5px]">
                 <PrettyButton
                   text="Contact us"
-                  link="https://www.google.com"
+                  link="/contact"
                   className="relative z-10"
                 />
               </div>

@@ -32,10 +32,11 @@ export default async function Page() {
         <div
           key={entry.fields.id}
           className={`p-4 border rounded-lg shadow-lg ${
-            index % 2 === 0 ? 'h-custom-1 mt-0' : 'h-custom-2 mt-60'
+            index % 2 === 0 ? 'h-[650px] mt-0' : 'h-[650px] mt-40'
           }`}
         >
           <BlogPostCard
+            id={entry.fields.id}
             title={entry.fields.title}
             thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
             desc={entry.fields.desc}
