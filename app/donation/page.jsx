@@ -9,7 +9,7 @@ export default function donation() {
       <Donation></Donation>
       <div className="">
         <div className="mt-20 lg:mt-32 grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center">
-          <div className="flex flex-col justify-center items-center mt-20 text-wrap leading-8 text-xl font-bold mx-20 rounded-xl shadow p-10 px-10 bg-[#FFD878] left-0">
+          <div className="flex flex-col justify-center items-center mt-20 text-wrap leading-8 text-xl font-bold mx-20 rounded-xl shadow p-10 px-10 bg-[#FFD878] left-3 w-9/12">
             <Heading text="Monetory Donations" lightFont />
             <Image
                 src="/images/image 34.png"
@@ -23,7 +23,7 @@ export default function donation() {
           </div>
 
           <div className="">
-          <div className="flex flex-col justify-center items-center text-wrap leading-8 text-xl font-bold mx-20 rounded-xl shadow p-10 px-10 bg-[#FFD878] top-60 absolute right-20 w-96 h-auto mt-96">
+          <div className="flex flex-col justify-center items-center text-wrap leading-8 text-xl font-bold mx-20 rounded-xl shadow p-10 px-10 bg-[#FFD878] top-60 absolute right-20 w-1/3 h-auto mt-96">
             <Heading text="NON-Monetary Donations" lightFont />
             <ul className="text-gray-900 mt-6 text-lg leading-relaxed space-y-4">
               <li>We greatly appreciate donations of supplies and other forms of support. If you would like to contribute in ways other than money, please contact us:</li>
