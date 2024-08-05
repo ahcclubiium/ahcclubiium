@@ -17,13 +17,13 @@ export default async function Page() {
       <div className="text-center my-7">
       <Heading text={'PROGRAMS & ACTIVITY'} color={"taupe"} size={"xlarge"} weight={"bold"} />
       </div> 
-      <Image
+      {/* <Image
         src="/images/CAT PAW 1.png"
         width={300}
         height={300}
         className="object-cover mb-1 z-[-10] absolute right-40  top-0"
         alt = "abu hurairah club iium"
-      />
+      /> */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20 max-w-5xl mx-auto m-2">
   {client
     .getEntries({ content_type: "program" })
@@ -32,7 +32,7 @@ export default async function Page() {
         <div
           key={entry.fields.id}
           className={`p-4 border rounded-lg shadow-lg ${
-            index % 2 === 0 ? 'h-[650px] mt-0' : 'h-[650px] mt-40'
+            index % 2 === 0 ? 'h-[650px] mt-0' : 'h-[650px] mt-20'
           }`}
         >
           <BlogPostCard
@@ -46,6 +46,7 @@ export default async function Page() {
       ))
     )}
 </div>
+
 
 
     </section>
