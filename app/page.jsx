@@ -262,7 +262,7 @@ export default async function page() {
 
         {/* organization chart */}
         <section>
-          <div className="mt-40">
+          <div className="">
             <Organization></Organization>
           </div>
         </section>
