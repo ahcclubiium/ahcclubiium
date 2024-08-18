@@ -7,7 +7,7 @@ import LogoImage from "./LogoImage";
 
 const FooterNew = () => {
   return (
-    <footer className="w-full bg-[#B89670] text-white border border-t-gray-300 py-10 mt-10 flex items-center justify-center">
+    <footer className="w-full bg-[#B89670] text-white border border-t-gray-300 py-10 flex items-center justify-center ">
       <div className="w-full max-w-7xl space-y-10">
         <div className="flex flex-row items-center justify-between">
           <div className="flex justify-center gap-2 sm:gap-7 font-bold text-xs sm:text-xl">
@@ -55,7 +55,6 @@ const FooterNew = () => {
           </div>
           <LogoImage />
         </div>
-        
       </div>
     </footer>
   );

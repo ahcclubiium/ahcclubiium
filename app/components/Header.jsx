@@ -22,12 +22,12 @@ export default function Header() {
         font-bold text-white z-30"
     >
       {/* <LogoImage /> */}
-      <div className="flex w-full justify-center gap-4 lg:gap-14 items-center">
+      <div className="flex w-screen justify-center gap-4 lg:gap-14 items-center shadow-md ">
         <a
           href="/"
           className="nav-link transition ease-in-out hover:text-white/80"
         >
-          Home
+          Home 
         </a>
         <a
           href="/donation"
