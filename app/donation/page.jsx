@@ -8,43 +8,37 @@ export default function donation() {
     <div className="text-white">
       <Donation></Donation>
       <div className="">
-        <div className="mt-20 lg:mt-32 grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center">
-          <div className="flex flex-col justify-center items-center mt-20 text-wrap leading-8 text-xl font-bold mx-20 rounded-xl shadow p-10 px-10 bg-[#FFD878] left-3 w-9/12">
-            <Heading text="Monetory Donations" lightFont />
-            <Image
-                src="/images/image 34.png"
-                width={400}
-                height={400}
-                className="mx-20 w-[400] h-[400px] object-contain m-10"
-            ></Image>
-            <p className="text-gray-900 mt-6 text-lg leading-relaxed">
-            Simply scan this QR code with your mobile device to be taken directly to our donation portal. It's quick, easy, and secure.
+        {/* the ways to donate section */}
+        <div className="flex flex-row ml-10 mt-20 items-center justify-center">
+          <h1 className="text-[#B99771] text-[5rem] font-semibold mr-10">
+            {" "}
+            How to <br /> donate
+          </h1>
+          {/* first container */}
+          <div className="bg-[#FFD878] text-black h-[20rem] z-0 relative ">
+            <p className="p-10">
+              To make a donation, <br /> simply contact us at the number below
+              or use <br /> the bank details provided
             </p>
           </div>
-
-          <div className="">
-          <div className="flex flex-col justify-center items-center text-wrap leading-8 text-xl font-bold mx-20 rounded-xl shadow p-10 px-10 bg-[#FFD878] top-60 absolute right-20 w-1/3 h-auto mt-96">
-            <Heading text="NON-Monetary Donations" lightFont />
-            <ul className="text-gray-900 mt-6 text-lg leading-relaxed space-y-4">
-              <li>We greatly appreciate donations of supplies and other forms of support. If you would like to contribute in ways other than money, please contact us:</li>
-              <li>Email :</li>
-              <li>Phone :</li>
-              <li>Example need of supply:-</li>
-              <li>- Cat food (wet and dry)</li>
-              <li>- Litter and litter boxes</li>
-              <li>- Toys and blankets</li>
-              <li>- Medical supplies (e.g., flea treatment, dewormers)</li>
-            </ul>
-          </div>
+          {/* sec container */}
+          <div className="bg-[#F6F2CC] text-black h-fit mt-[6.8rem] p-4 z-10 absolute ml-[23rem]">
+            <p>Phone: 123-456-7890</p>
+            <p>Bnak Details:</p>
+            <p>Bank Name: 123-456-7890</p>
+            <p>Account Number: </p>
+            <p>Account Name: </p>
           </div>
         </div>
 
         <div className=" flex flex-col justify-center items-center lg:mt-32 text-center bg-[#B89670]">
-          <div className="mt-20">
+          <div className="mt-20 text-white">
             <Heading text="THANK YOU TO OUR DONORS!" lightFont />
           </div>
           <p className="text-white mt-6 text-lg leading-relaxed">
-          We are incredibly grateful for the generous donations we received. Here are some of the wonderful contributions that have made a difference:
+            We are incredibly grateful for the generous donations we received.
+            Here are some of the wonderful contributions that have made a
+            difference:
           </p>
           <Image
             src="/images/Frame 1.png"
@@ -53,7 +47,8 @@ export default function donation() {
             className="mx-20 w-[400] h-[400px] object-contain m-10"
           ></Image>
           <p className="text-xs">
-          *Caption: "Thank you, [Donor's Name], for the generous donation of cat food and toys!"*
+            *Caption: "Thank you, [Donor's Name], for the generous donation of
+            cat food and toys!"*
           </p>
           <Image
             src="/images/image 28.png"
@@ -62,11 +57,11 @@ export default function donation() {
             className="mx-20 w-[400] h-[400px] object-contain m-10"
           ></Image>
           <p className="text-xs mb-20">
-          *Caption: "A big thank you to [Donor's Name] for the cozy blankets and litter boxes!"*
+            *Caption: "A big thank you to [Donor's Name] for the cozy blankets
+            and litter boxes!"*
           </p>
         </div>
       </div>
     </div>
   );
 }
-
