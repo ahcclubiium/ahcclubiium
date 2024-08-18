@@ -34,7 +34,10 @@ export default async function page() {
           </div>
           <div className="flex flex-col gap-20 justify-center items-center animate-fade-down">
             <div className="flex flex-col justify-center items-center mt-14 h-auto ">
-              <h1 className="font-semibold text-[64.12px] text-[#866C5D] ">
+              <h1
+                className="font-semibold text-[64.12px] text-[#866C5D] "
+                style={{ textShadow: "0px 2px 4px rgba(0, 0, 0, 0.5)" }}
+              >
                 ABOUT US{" "}
               </h1>
               <p className="text-[22.51px] text-center text-[#6F6459]">
@@ -44,7 +47,10 @@ export default async function page() {
             </div>
 
             <div className="flex flex-col justify-center items-center w-[64rem]  h-auto">
-              <h1 className="text-[39.77px] font-light text-[#DAAF2C] flex justify-center">
+              <h1
+                className="text-[39.77px] font-light text-[#DAAF2C] flex justify-center"
+                style={{ textShadow: "0px 2px 4px rgba(0, 0, 0, 0.5)" }}
+              >
                 MISSION
               </h1>
               <p className=" w-auto text-center font-light leading-8 text-[18.66px] mx-5 rounded-3xl shadow p-5 px-20 bg-[#FFD878] border-2 drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] mt-14 tracking-widest">

@@ -9,30 +9,33 @@ export default function donation() {
       <Donation></Donation>
       <div className="">
         {/* the ways to donate section */}
-        <div className="flex flex-row ml-10 mt-20 items-center justify-center">
-          <h1 className="text-[#B99771] text-[5rem] font-semibold mr-10">
+        <div className="flex flex-row ml-[18rem] mt-20 items-center ">
+          <h1 className="text-[#B99771] text-[5rem] font-semibold mr-14">
             {" "}
             How to <br /> donate
           </h1>
           {/* first container */}
-          <div className="bg-[#FFD878] text-black h-[20rem] z-0 relative ">
+          <div className="bg-[#FFD878] text-black h-[22rem] z-0 relative w-[29rem] ">
             <p className="p-10">
               To make a donation, <br /> simply contact us at the number below
               or use <br /> the bank details provided
             </p>
           </div>
           {/* sec container */}
-          <div className="bg-[#F6F2CC] text-black h-fit mt-[6.8rem] p-4 z-10 absolute ml-[23rem]">
+          <div className="bg-[#F6F2CC] text-black h-fit mt-[5.7rem] p-4 z-10 absolute ml-[24rem] shadow-2xl">
             <p>Phone: 123-456-7890</p>
             <p>Bnak Details:</p>
-            <p>Bank Name: 123-456-7890</p>
-            <p>Account Number: </p>
-            <p>Account Name: </p>
+            <p>Bank Name: Maybank</p>
+            <p>Account Number: 5622 0965 6727</p>
+            <p>Account Name: Persatuan Kebajikan Haiwan Abu Hurairah </p>
           </div>
         </div>
 
         <div className=" flex flex-col justify-center items-center lg:mt-32 text-center bg-[#B89670]">
-          <p className="text-white mt-10 font-semibold text-[3rem]">
+          <p
+            className="text-white mt-10 font-semibold text-[3rem]"
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+          >
             THANK YOU TO OUR DONORS!
           </p>
           <p className="text-white mt-6 text-lg leading-relaxed">
@@ -44,7 +47,7 @@ export default function donation() {
             src="/images/Frame 1.png"
             width={400}
             height={400}
-            className="mx-20 w-[400] h-[400px] object-contain m-10"
+            className="mx-20 w-[400] h-[400px] object-contain m-10 "
           ></Image>
           <p className="text-xs">
             *Caption: "Thank you, [Donor's Name], for the generous donation of
