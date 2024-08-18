@@ -32,12 +32,12 @@ export default function donation() {
         </div>
 
         <div className=" flex flex-col justify-center items-center lg:mt-32 text-center bg-[#B89670]">
-          <div className="mt-20 text-white">
-            <Heading text="THANK YOU TO OUR DONORS!" lightFont />
-          </div>
+          <p className="text-white mt-10 font-semibold text-[3rem]">
+            THANK YOU TO OUR DONORS!
+          </p>
           <p className="text-white mt-6 text-lg leading-relaxed">
             We are incredibly grateful for the generous donations we received.
-            Here are some of the wonderful contributions that have made a
+            Here are <br /> some of the wonderful contributions that have made a
             difference:
           </p>
           <Image
