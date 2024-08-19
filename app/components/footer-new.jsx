@@ -57,9 +57,8 @@ const FooterNew = () => {
       </div>
 
       {/* New Bottom Layer */}
-      <div className="w-full h-full bg-[#896E50] text-center text-xs sm:text-sm py-2 mt-7 flex flex-row">
+      <div className="w-full h-full bg-[#896E50] text-center text-xs sm:text-sm py-2 mt-7 ">
         <p className="font-bold">Powered by Motion-U Club</p>
-        <img src="" alt="" />
       </div>
     </footer>
   );
