@@ -210,7 +210,7 @@ export default async function page() {
     <div className="flex flex-col justify-center items-center text-center p-5 md:p-10 m-10 md:m-20">
       <HeadingAboutus text={"PROGRAM"}></HeadingAboutus>
     </div>
-    <div className="relative left-0 mt-20 md:mt-60">
+    {/* <div className="relative left-0 mt-20 md:mt-60">
       <Image
         src="/images/CAT PAW 1.png"
         width={300}
@@ -218,7 +218,7 @@ export default async function page() {
         className="object-cover w-full max-w-[150px] sm:max-w-[200px] md:max-w-[300px] hidden md:block"
         alt=""
       />
-    </div>
+    </div> */}
 
     {/* LatestProgram */}
     <div className="flex flex-col md:flex-row justify-center items-center">

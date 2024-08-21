@@ -92,11 +92,11 @@ export default function HeroText() {
                 />
               </div>
               <div className="text-white text-left">
-                <h2 className="text-5xl font-bold">Welcome to..</h2>
-                <h1 className="font-bold text-7xl">
+                <h2 className="text-2xl font-bold">Welcome to..</h2>
+                <h1 className="font-bold text-2xl">
                   ABU HURAIRAH <br /> IIUM CLUB
                 </h1>
-                <p className="text-2xl">
+                <p className="text-1xl">
                   The Abu Hurairah Club aims to give all homeless <br /> and
                   abandoned cats and kittens a chance of <br /> survival and a
                   new home.
