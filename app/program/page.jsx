@@ -32,7 +32,7 @@ export default async function Page() {
         <div
           key={entry.fields.id}
           className={`p-4 border rounded-lg shadow-lg ${
-            index % 2 === 0 ? 'h-[650px] mt-0' : 'h-[650px] mt-20'
+            index % 2 === 0 ? 'h-[730px] mt-0' : 'h-[700px] mt-20'
           }`}
         >
           <BlogPostCard
@@ -40,7 +40,7 @@ export default async function Page() {
             title={entry.fields.title}
             thumbnail={entry.fields.thumbnail?.fields?.file?.url || ''}
             desc={entry.fields.desc}
-            slug={entry.fields.slug}
+            // slug={entry.fields.slug}
           />
         </div>
       ))
