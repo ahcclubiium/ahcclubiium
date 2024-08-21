@@ -27,7 +27,7 @@ export const metadata = {
     "motion-u kict",
     "motion-u kict iium",
   ],
-  metadataBase: new URL("https://www.motionu.club/"),
+  metadataBase: new URL("https://ahcclubiium.vercel.app"),
 };
 
 export default function RootLayout({ children }) {

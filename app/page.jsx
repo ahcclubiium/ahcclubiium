@@ -24,7 +24,7 @@ export default async function page() {
         <HeroText></HeroText>
         {/* intro and mission  */}
         <section className="py-12">
-          <div className="absolute left-0">
+          <div className="absolute left-0  hidden md:block">
             <Image
               src="/images/CAT PAW 1.png"
               width={300}
@@ -64,7 +64,7 @@ export default async function page() {
         </section>
 
         {/* Stories */}
-        <section>
+        <section className="hidden md:block">
           <div className="mt-20">
             {/* first story */}
             <div className="z-0 absolute">
@@ -206,65 +206,64 @@ export default async function page() {
 
         {/* program */}
         <section>
-          <div className="my-50 px-40 mt-[67rem]">
-            <div className="flex flex-col justify-center items-center text-center p-10 m-20">
-              <HeadingAboutus text={"PROGRAM"}></HeadingAboutus>
-            </div>
-            <div className="absolute left-0 mt-60">
-              <Image
-                src="/images/CAT PAW 1.png"
-                width={300}
-                height={300}
-                className="object-cover"
-                alt=""
-              />
-            </div>
+  <div className="my-10 px-4 sm:px-10 md:px-20 lg:px-40 mt-20 md:mt-[67rem]">
+    <div className="flex flex-col justify-center items-center text-center p-5 md:p-10 m-10 md:m-20">
+      <HeadingAboutus text={"PROGRAM"}></HeadingAboutus>
+    </div>
+    <div className="relative left-0 mt-20 md:mt-60">
+      <Image
+        src="/images/CAT PAW 1.png"
+        width={300}
+        height={300}
+        className="object-cover w-full max-w-[150px] sm:max-w-[200px] md:max-w-[300px] hidden md:block"
+        alt=""
+      />
+    </div>
 
-            {/* LatestProgram */}
-            <div className="flex flex-row justify-center items-center">
-              <div className="transform translate-x-32">
-                <div className="w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
-                  <h3 className="text-5xl font-bold text-white py-8">
-                    <a
-                      href="/program"
-                      className="transition ease-in-out hover:text-white/80"
-                    >
-                      Latest Program
-                    </a>
-                  </h3>
-                  <div className="p-10">
-                    <PrettyButton
-                      text="Read More"
-                      link="/program"
-                      className="relative z-10"
-                      alt=""
-                    ></PrettyButton>
-                  </div>
-                </div>
-              </div>
-              <div className="pl-20">
-                {client
-                  .getEntries({
-                    content_type: "program",
-                    limit: 1, //auto get the latest publish content
-                  })
-                  .then((entries) =>
-                    entries.items.map((entry) => (
-                      <LatestProgram
-                        key={entry.fields.id}
-                        title={entry.fields.title}
-                        thumbnail={
-                          entry.fields.thumbnail?.fields?.file?.url || ""
-                        }
-                        desc={entry.fields.desc}
-                        slug={entry.fields.slug}
-                      />
-                    ))
-                  )}
-              </div>
-            </div>
+    {/* LatestProgram */}
+    <div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="transform translate-x-0 md:translate-x-32 hidden md:block">
+        <div className="w-full md:w-72 h-80 p-5 px-8 bg-black rounded-3xl border-2 border-black opacity-55">
+          <h3 className="text-3xl md:text-5xl font-bold text-white py-8">
+            <a
+              href="/program"
+              className="transition ease-in-out hover:text-white/80"
+            >
+              Latest Program
+            </a>
+          </h3>
+          <div className="p-5 md:p-10">
+            <PrettyButton
+              text="Read More"
+              link="/program"
+              className="relative z-10"
+              alt=""
+            ></PrettyButton>
           </div>
-        </section>
+        </div>
+      </div>
+      <div className="pl-0 md:pl-20">
+        {client
+          .getEntries({
+            content_type: "program",
+            limit: 1, //auto get the latest publish content
+          })
+          .then((entries) =>
+            entries.items.map((entry) => (
+              <LatestProgram
+                key={entry.fields.id}
+                title={entry.fields.title}
+                thumbnail={entry.fields.thumbnail?.fields?.file?.url || ""}
+                desc={entry.fields.desc}
+                slug={entry.fields.slug}
+              />
+            ))
+          )}
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* organization chart */}
         <section>
