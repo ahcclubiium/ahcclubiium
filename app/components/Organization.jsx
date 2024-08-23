@@ -12,13 +12,13 @@ export default function Organization() {
       </div>
 
       <div className="w-full flex justify-center mb-48">
-        <Image
+        {/* <Image
           src="/images/OrganizationChart.png"
           width={1400}
           height={1400}
           className="w-full h-auto max-w-5xl object-contain"
           alt="Organization Chart"
-        ></Image>
+        ></Image> */}
       </div>
     </div>
   );
