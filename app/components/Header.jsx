@@ -42,10 +42,10 @@ export default function Header() {
           Program
         </a>
         <a
-          href="https://catwatch.onrender.com/"
+          href="/adoption"
           className="nav-link transition ease-in-out hover:text-white/80"
         >
-          Report
+          Adoption
         </a>
         <a
           href="/contact"

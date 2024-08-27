@@ -20,7 +20,7 @@ export default function BlogPostCard({ id, title, thumbnail, desc }) {
         <div className="bg-white hover:opacity-95 rounded-b-2xl mb-3">
           <div className="p-3 py-4">
             <Heading text={title || "No title"} color="black" size={"large"} weight={"bold"} align={"none"} />
-            <p className="text-gray-500 text-justify">{desc || "No description"}</p>
+            <p className="text-gray-500 text-justify">{desc || ""}</p>
             {/*add truncate in here*/}
             {/* <div className="flex justify-between items-center pt-5">
             <div className="text-blue-500">Read more</div> 
